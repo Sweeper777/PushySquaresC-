@@ -1,0 +1,5 @@
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/mulangsu/Projects/PushySquares/PushySquares/bin/Debug/PushySquares.exe.mdb
+/Users/mulangsu/Projects/PushySquares/PushySquares/bin/Debug/PushySquares.exe
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/PushySquares.exe
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/PushySquares.exe.mdb
