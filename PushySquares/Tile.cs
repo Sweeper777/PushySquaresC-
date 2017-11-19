@@ -9,4 +9,7 @@ namespace PushySquares {
 		Up, Down, Left, Right
 	}
 
+	public enum Tile {
+		Empty, Void, Wall, SquareColor1, SquareColor2, SquareColor3, SquareColor4, SquareGrey
+	}
 }
