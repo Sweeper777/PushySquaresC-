@@ -5,5 +5,8 @@ namespace PushySquares {
 		public int X { get; }
 		public int Y { get; }
 
+		public override int GetHashCode () {
+			return X * 1000 + Y;
+		}
 	}
 }
