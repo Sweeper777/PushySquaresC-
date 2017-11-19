@@ -8,5 +8,11 @@ namespace PushySquares {
 		public override int GetHashCode () {
 			return X * 1000 + Y;
 		}
+
+		public override string ToString ()
+		{
+			return $"({X}, {Y})";
+		}
+
 	}
 }
