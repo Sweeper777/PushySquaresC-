@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace PushySquares {
 	public struct Position {
@@ -23,5 +23,11 @@ namespace PushySquares {
 		public Position Below  => new Position (X, Y - 1);
 		public Position Right => new Position (X + 1, Y);
 		public Position Left => new Position (X - 1, Y);
+	}
+
+	public static class ArrayExtensions {
+		public static ref T ItemAt<T>(this T[,] array, Position pos) {
+            return ref array[pos.X, pos.Y];
+		}
 	}
 }
