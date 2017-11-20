@@ -18,5 +18,10 @@ namespace PushySquares {
 			X = x;
 			Y = y;
 		}
+
+		public Position Above => new Position(X, Y + 1);
+		public Position Below  => new Position (X, Y - 1);
+		public Position Right => new Position (X + 1, Y);
+		public Position Left => new Position (X - 1, Y);
 	}
 }
