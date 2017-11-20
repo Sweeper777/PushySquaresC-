@@ -1,0 +1,5 @@
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/PushySquares.csproj.CoreCompileInputs.cache
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/PushySquares.exe
+/Users/mulangsu/Projects/PushySquares/PushySquares/bin/Debug/PushySquares.exe
+/Users/mulangsu/Projects/PushySquares/PushySquares/bin/Debug/PushySquares.pdb
+/Users/mulangsu/Projects/PushySquares/PushySquares/obj/x86/Debug/PushySquares.pdb
