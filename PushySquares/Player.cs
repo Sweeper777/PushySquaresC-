@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace PushySquares {
 
@@ -11,6 +11,11 @@ namespace PushySquares {
 		}
 		public Color Color { get; }
 
+		public Player(int turnsUntilNewSquare, int lives, Color color) {
+			Lives = lives;
+			TurnsUntilNewSquare = turnsUntilNewSquare;
+			Color = color;
+		}
 	}
 }
 
