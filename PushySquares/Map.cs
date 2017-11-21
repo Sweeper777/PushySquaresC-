@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -6,6 +6,19 @@ namespace PushySquares {
 	public struct Map {
 		public Tile[,] Board { get; }
 		public Dictionary<Color, Position> Spawnpoints { get; set; }
+
+		public static readonly Map Standard = new Map(
+@"....OO....
+.1++++++2.
+.++++++++.
+.++++++++.
+O+++OO+++O
+O+++OO+++O
+.++++++++.
+.++++++++.
+.4++++++3.
+....OO....");
+
 		public Map(Tile[,] board, Dictionary<Color, Position> spawnpoints) {
 			Board = board;
 			Spawnpoints = spawnpoints;
