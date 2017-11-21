@@ -11,5 +11,10 @@ namespace PushySquares {
 			Spawnpoints = spawnpoints;
 		}
 
+		public Map(string mapString) {
+			string[] lines = mapString.Split(Environment.NewLine.ToCharArray()).Where(x => x != "").ToArray();
+			Board = new Tile[lines[0].Length, lines.Length];
+			Spawnpoints = new Dictionary<Color, Position>();
+		}
 	}
 }
