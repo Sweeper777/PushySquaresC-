@@ -16,6 +16,11 @@ namespace PushySquares {
 		public Player CurrentPlayer => Players[currentPlayerIndex];
 		public GameDelegate Delegate { get; set; }
 
+		public Game(Map map, int playerCount, int lives = 5) {
+			Board = map.Board;
+			Spawnpoints = map.Spawnpoints;
+			Players = new List<Player>();
+		}
 	}
 
 	public delegate void GameDelegate(Direction? direction, 
