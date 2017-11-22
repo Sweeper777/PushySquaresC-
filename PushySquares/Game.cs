@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace PushySquares {
@@ -36,6 +36,15 @@ namespace PushySquares {
 				SpawnNewSquare(Color.Color3);
 				break;
 			}
+			Players.Sort((x, y) => x.Color.CompareTo(y.Color));
+			if (playerCount < 4) {
+				Spawnpoints.Remove(Color.Color4);
+			}
+			if (playerCount < 3) {
+				Spawnpoints.Remove(Color.Color2);
+			}
+
+			CurrentPlayer.TurnsUntilNewSquare--;
 		}
 
 		private void SpawnNewSquare(Color c) {
