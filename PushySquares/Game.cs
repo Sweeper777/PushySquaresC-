@@ -21,6 +21,10 @@ namespace PushySquares {
 			Spawnpoints = map.Spawnpoints;
 			Players = new List<Player>();
 		}
+
+		private void SpawnNewSquare(Color c) {
+			Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
+		}
 	}
 
 	public delegate void GameDelegate(Direction? direction, 
