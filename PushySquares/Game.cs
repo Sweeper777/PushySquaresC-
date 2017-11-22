@@ -20,6 +20,22 @@ namespace PushySquares {
 			Board = map.Board;
 			Spawnpoints = map.Spawnpoints;
 			Players = new List<Player>();
+			switch (playerCount) {
+			case 4:
+				Players.Add(new Player(PlayerCountToTurnsUntilNewSquare[playerCount], lives, Color.Color4));
+				SpawnNewSquare(Color.Color4);
+				goto case 3;
+			case 3:
+				Players.Add(new Player(PlayerCountToTurnsUntilNewSquare[playerCount], lives, Color.Color2));
+				SpawnNewSquare(Color.Color2);
+				goto case 2;
+			case 2:
+				Players.Add(new Player(PlayerCountToTurnsUntilNewSquare[playerCount], lives, Color.Color1));
+				SpawnNewSquare(Color.Color1);
+				Players.Add(new Player(PlayerCountToTurnsUntilNewSquare[playerCount], lives, Color.Color3));
+				SpawnNewSquare(Color.Color3);
+				break;
+			}
 		}
 
 		private void SpawnNewSquare(Color c) {
