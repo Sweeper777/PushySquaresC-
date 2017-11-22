@@ -9,6 +9,13 @@ namespace PushySquares {
 			{ 4, 4 }
 		};
 
+		public Tile[,] Board { get; set; }
+		public Dictionary<Color, Position> Spawnpoints { get; set; }
+		public List<Player> Players { get; set; }
+		private int currentPlayerIndex = 0;
+		public Player CurrentPlayer => Players[currentPlayerIndex];
+		public GameDelegate Delegate { get; set; }
+
 	}
 
 	public delegate void GameDelegate(Direction? direction, 
