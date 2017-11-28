@@ -65,6 +65,10 @@ namespace PushySquares
             {
                 return Color.Grey;
             }
+            do
+            {
+                currentPlayerIndex = currentPlayerIndex == Players.Count - 1 ? 0 : currentPlayerIndex + 1;
+            } while (CurrentPlayer.Lives == 0);
         }
     }
 
