@@ -69,6 +69,17 @@ namespace PushySquares
             {
                 currentPlayerIndex = currentPlayerIndex == Players.Count - 1 ? 0 : currentPlayerIndex + 1;
             } while (CurrentPlayer.Lives == 0);
+            CurrentPlayer.TurnsUntilNewSquare--;
+            if (CurrentPlayer.TurnsUntilNewSquare == 0)
+            {
+                if (Board.ItemAt(Spawnpoints[CurrentPlayer.Color]) == Tile.Empty)
+                {
+                    SpawnNewSquare(CurrentPlayer.Color);
+                    retVal = CurrentPlayer.Color;
+                }
+                CurrentPlayer.TurnsUntilNewSquare = Game.PlayerCountToTurnsUntilNewSquare[Players.Count] + 1;
+            }
+            return retVal;
         }
     }
 
