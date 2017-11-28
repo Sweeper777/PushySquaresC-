@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PushySquares {
 	public struct Position {
@@ -19,8 +20,8 @@ namespace PushySquares {
 			Y = y;
 		}
 
-		public Position Above => new Position(X, Y + 1);
-		public Position Below  => new Position (X, Y - 1);
+		public Position Above => new Position(X, Y - 1);
+		public Position Below  => new Position (X, Y + 1);
 		public Position Right => new Position (X + 1, Y);
 		public Position Left => new Position (X - 1, Y);
 	}
