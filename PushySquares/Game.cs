@@ -57,6 +57,15 @@ namespace PushySquares
         {
             Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
         }
+
+        private Color? NextTurn()
+        {
+            Color? retVal = null;
+            if (!Players.Any(x => x.Lives > 0))
+            {
+                return Color.Grey;
+            }
+        }
     }
 
     public delegate void GameDelegate(Direction? direction,
