@@ -41,5 +41,9 @@ namespace PushySquares {
             }
             return list;
         }
+
+        public static List<Position> PositionsOf(this Tile[,] array, Color color) {
+            return array.PositionsOf(TileExtensions.FromColor(color));
+        }
 	}
 }
