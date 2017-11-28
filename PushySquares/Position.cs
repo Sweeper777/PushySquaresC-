@@ -29,5 +29,17 @@ namespace PushySquares {
 		public static ref T ItemAt<T>(this T[,] array, Position pos) {
             return ref array[pos.X, pos.Y];
 		}
+
+        public static List<Position> PositionsOf(this Tile[,] array, Tile tile) {
+            var list = new List<Position>();
+            for (int x = 0; x < array.GetLength(0); x++) {
+                for (int y = 0; y < array.GetLength(1); y++) {
+                    if (array[x, y] == tile) {
+                        list.Add(new Position(x, y));
+                    }
+                }
+            }
+            return list;
+        }
 	}
 }
