@@ -139,6 +139,9 @@ namespace PushySquares
             outOfLoop:
                 movingSquaresPositions.AddRange(pushedPositions);
             }
+            var sortedPositions = movingSquaresPositions.Distinct().ToList();
+            sortedPositions.Sort(sorter);
+            beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
         }
     }
 
