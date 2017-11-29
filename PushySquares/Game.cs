@@ -113,6 +113,32 @@ namespace PushySquares
 
             var movingSquaresPositions = new List<Position>();
             var beingDestroyedSquaresPositions = new List<Position>();
+            foreach (var position in allSquarePositions)
+            {
+                var pushedPositions = new List<Position>() { position };
+                {
+                    switch (Board.ItemAt(displacement(pushedPositions.Last())))
+                    {
+                        case Tile.Empty:
+                            goto outOfLoop;
+                        case Tile.Wall:
+                            pushedPositions.Clear();
+                            goto outOfLoop;
+                        case Tile.Void:
+                            beingDestroyedSquaresPositions.Add(pushedPositions.Last());
+                            goto outOfLoop;
+                        case Tile.SquareColor1:
+                        case Tile.SquareColor2:
+                        case Tile.SquareColor3:
+                        case Tile.SquareColor4:
+                        case Tile.SquareGrey:
+                            pushedPositions.Add(displacement(pushedPositions.Last()));
+                            break;
+                    }
+                }
+            outOfLoop:
+                movingSquaresPositions.AddRange(pushedPositions);
+            }
         }
     }
 
