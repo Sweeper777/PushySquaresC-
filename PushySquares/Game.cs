@@ -87,6 +87,16 @@ namespace PushySquares
             var retVal = new List<Position>();
             foreach (var player in Players)
             {
+                var destroyedSquares = destroyedSquarePositions.Where(x => Board.ItemAt(x) == TileExtensions.FromColor(player.Color));
+                player.Lives -= destroyedSquares.Count();
+                if (player.Lives == 0)
+                {
+                    foreach (var pos in Board.PositionsOf(player.Color))
+                    {
+                        retVal.Add(pos);
+                        Board.ItemAt(pos) = Tile.SquareGrey;
+                    }
+                }
             }
             return retVal;
         }
