@@ -104,6 +104,13 @@ namespace PushySquares
         private void Move(Func<Position, Position> displacement, Comparison<Position> sorter, Direction direction)
         {
             var allSquarePositions = Board.PositionsOf(CurrentPlayer.Color);
+            if (allSquarePositions.Count == 0)
+            {
+                Color? newSquareColor = NextTurn();
+                Delegate?.Invoke(direction, new List<Position>(), new List<Position>(), new List<Position>(), newSquareColor);
+                return;
+            }
+
         }
     }
 
