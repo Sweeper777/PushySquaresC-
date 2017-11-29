@@ -100,6 +100,11 @@ namespace PushySquares
             }
             return retVal;
         }
+
+        private void Move(Func<Position, Position> displacement, Comparison<Position> sorter, Direction direction)
+        {
+            var allSquarePositions = Board.PositionsOf(CurrentPlayer.Color);
+        }
     }
 
     public delegate void GameDelegate(Direction? direction,
