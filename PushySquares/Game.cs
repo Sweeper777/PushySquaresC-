@@ -81,6 +81,15 @@ namespace PushySquares
             }
             return retVal;
         }
+
+        private List<Position> HandleDeaths(List<Position> destroyedSquarePositions)
+        {
+            var retVal = new List<Position>();
+            foreach (var player in Players)
+            {
+            }
+            return retVal;
+        }
     }
 
     public delegate void GameDelegate(Direction? direction,
