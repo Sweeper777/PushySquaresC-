@@ -111,6 +111,8 @@ namespace PushySquares
                 return;
             }
 
+            var movingSquaresPositions = new List<Position>();
+            var beingDestroyedSquaresPositions = new List<Position>();
         }
     }
 
