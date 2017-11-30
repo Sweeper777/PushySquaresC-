@@ -154,6 +154,7 @@ namespace PushySquares
                 }
             }
             var newSquareColor1 = NextTurn();
+            Delegate?.Invoke(direction, movingSquaresPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
     }
 
