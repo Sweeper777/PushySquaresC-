@@ -64,6 +64,11 @@ namespace PushySquares
             Move(x => x.Above, (x, y) => x.Y.CompareTo(y.Y), Direction.Up);
         }
 
+        public void MoveRight()
+        {
+            Move(x => x.Right, (x, y) => y.X.CompareTo(x.X), Direction.Right);
+        }
+
         private void SpawnNewSquare(Color c)
         {
             Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
