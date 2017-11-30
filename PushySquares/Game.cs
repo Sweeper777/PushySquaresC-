@@ -144,6 +144,15 @@ namespace PushySquares
             sortedPositions.Sort(sorter);
             beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
             var greyedOutSquaresPositions = HandleDeaths(beingDestroyedSquaresPositions);
+            foreach (var position in sortedPositions)
+            {
+                var tile = Board.ItemAt(position);
+                Board.ItemAt(position) = Tile.Empty;
+                if (!beingDestroyedSquaresPositions.Contains(position))
+                {
+                    Board.ItemAt(displacement(position)) = tile;
+                }
+            }
         }
     }
 
