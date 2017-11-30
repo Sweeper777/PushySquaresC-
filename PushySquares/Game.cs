@@ -116,6 +116,7 @@ namespace PushySquares
             foreach (var position in allSquarePositions)
             {
                 var pushedPositions = new List<Position>() { position };
+                while (true)
                 {
                     switch (Board.ItemAt(displacement(pushedPositions.Last())))
                     {
@@ -142,6 +143,7 @@ namespace PushySquares
             var sortedPositions = movingSquaresPositions.Distinct().ToList();
             sortedPositions.Sort(sorter);
             beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
+            var greyedOutSquaresPositions = HandleDeaths(beingDestroyedSquaresPositions);
         }
     }
 
