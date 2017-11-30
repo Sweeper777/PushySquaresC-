@@ -153,6 +153,7 @@ namespace PushySquares
                     Board.ItemAt(displacement(position)) = tile;
                 }
             }
+            var newSquareColor1 = NextTurn();
         }
     }
 
