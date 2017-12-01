@@ -77,6 +77,12 @@ namespace PushySquares
         public override string ToString()
         {
             var builder = new StringBuilder();
+            var dict = new Dictionary<Tile, string>() {
+                {Tile.SquareColor1, "\U0001F6B9"},
+                {Tile.SquareColor2, "\U0001F6BA️"},
+                {Tile.SquareColor3, "\U0001F6BC"},
+                {Tile.SquareColor4, "\u2747\uFE0F️ "}
+            };
         }
         private void SpawnNewSquare(Color c)
         {
