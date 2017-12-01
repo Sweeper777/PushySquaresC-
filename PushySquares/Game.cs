@@ -74,6 +74,10 @@ namespace PushySquares
             Move(x => x.Left, (x, y) => x.X.CompareTo(y.X), Direction.Left);
         }
 
+        public override string ToString()
+        {
+            var builder = new StringBuilder();
+        }
         private void SpawnNewSquare(Color c)
         {
             Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
