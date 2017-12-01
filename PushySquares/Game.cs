@@ -87,6 +87,7 @@ namespace PushySquares
             builder.Append("Lives: ");
             Players.ForEach(x => builder.Append($"{x.Lives} "));
             builder.AppendLine();
+            builder.AppendLine($"New Square In: {CurrentPlayer.TurnsUntilNewSquare}");
         }
         private void SpawnNewSquare(Color c)
         {
