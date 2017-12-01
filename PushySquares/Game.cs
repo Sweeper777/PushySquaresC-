@@ -83,6 +83,7 @@ namespace PushySquares
                 {Tile.SquareColor3, "\U0001F6BC"},
                 {Tile.SquareColor4, "\u2747\uFE0F️ "}
             };
+            builder.AppendLine($"Current Turn: {dict[TileExtensions.FromColor(CurrentPlayer.Color)]}");
         }
         private void SpawnNewSquare(Color c)
         {
