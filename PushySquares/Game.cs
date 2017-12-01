@@ -88,6 +88,41 @@ namespace PushySquares
             Players.ForEach(x => builder.Append($"{x.Lives} "));
             builder.AppendLine();
             builder.AppendLine($"New Square In: {CurrentPlayer.TurnsUntilNewSquare}");
+            for (int y = 0; y < Board.GetLength(1); y++)
+            {
+                for (int x = 0; x < Board.GetLength(0); x++)
+                {
+                    switch (Board[x, y])
+                    {
+                        case Tile.Empty:
+                            builder.Append("\u2B1C\uFE0F");
+                            break;
+                        case Tile.Void:
+                            builder.Append("  ");
+                            break;
+                        case Tile.Wall:
+                            builder.Append("\U0001F532");
+                            break;
+                        case Tile.SquareGrey:
+                            builder.Append("\u2139\uFE0F️ ");
+                            break;
+                        case Tile.SquareColor1:
+                            builder.Append("\U0001F6B9");
+                            break;
+                        case Tile.SquareColor2:
+                            builder.Append("\U0001F6BA️");
+                            break;
+                        case Tile.SquareColor3:
+                            builder.Append("\U0001F6BC️");
+                            break;
+                        case Tile.SquareColor4:
+                            builder.Append("\u2747\uFE0F️ ");
+                            break;
+                    }
+                }
+                builder.AppendLine();
+            }
+            return builder.ToString();
         }
         private void SpawnNewSquare(Color c)
         {
