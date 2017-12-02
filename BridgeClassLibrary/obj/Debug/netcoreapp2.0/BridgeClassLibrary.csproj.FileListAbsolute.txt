@@ -1,0 +1,4 @@
+/Users/mulangsu/Projects/PushySquares/BridgeClassLibrary/obj/Debug/netcoreapp2.0/BridgeClassLibrary.csprojResolveAssemblyReference.cache
+/Users/mulangsu/Projects/PushySquares/BridgeClassLibrary/obj/Debug/netcoreapp2.0/BridgeClassLibrary.csproj.CoreCompileInputs.cache
+/Users/mulangsu/Projects/PushySquares/BridgeClassLibrary/obj/Debug/netcoreapp2.0/BridgeClassLibrary.AssemblyInfoInputs.cache
+/Users/mulangsu/Projects/PushySquares/BridgeClassLibrary/obj/Debug/netcoreapp2.0/BridgeClassLibrary.AssemblyInfo.cs
