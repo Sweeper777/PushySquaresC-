@@ -230,8 +230,8 @@ namespace PushySquares
     }
 
     public delegate void GameDelegate(Direction? direction,
-                                      Position[] originalPositions,
-                                      Position[] destroyedSquaresPositions,
-                                      Position[] greyedOutPositions,
+                                      List<Position> originalPositions,
+                                      List<Position> destroyedSquaresPositions,
+                                      List<Position> greyedOutPositions,
                                       Color? newSquareColor);
 }
