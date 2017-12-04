@@ -11,5 +11,22 @@ namespace PushySquares {
             return game.Players.Where(x => x.Color != color).Select(x => x.Color).ToList();
         }
 
+        public static void Move(this Game game, Direction direction) {
+            switch (direction) {
+                case Direction.Down:
+                    game.MoveDown();
+                    break;
+                case Direction.Up:
+                    game.MoveUp();
+                    break;
+                case Direction.Left:
+                    game.MoveLeft();
+                    break;
+                case Direction.Right:
+                    game.MoveRight();
+                    break;
+            }
+        }
+    }
     }
 }
