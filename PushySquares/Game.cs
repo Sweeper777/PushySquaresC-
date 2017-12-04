@@ -53,6 +53,7 @@ namespace PushySquares
             CurrentPlayer.TurnsUntilNewSquare--;
         }
 
+        Game() { }
 
         public void MoveDown()
         {
