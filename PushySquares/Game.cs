@@ -125,6 +125,17 @@ namespace PushySquares
             }
             return builder.ToString();
         }
+
+        public Game CreateCopy()
+        {
+            Game copy = new Game();
+            copy.Board = (Tile[,])Board.Clone();
+            copy.Spawnpoints = new Dictionary<Color, Position>(Spawnpoints);
+            copy.currentPlayerIndex = currentPlayerIndex;
+            copy.Players = Players.Select(x => x.CreateCopy()).ToList();
+            return copy;
+        }
+
         private void SpawnNewSquare(Color c)
         {
             Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
