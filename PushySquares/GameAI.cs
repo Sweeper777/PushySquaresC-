@@ -44,6 +44,30 @@ namespace PushySquares {
         readonly int wOpponentInDangerAboveThreshold;
 
         readonly Color myColor;
+
+        public GameAI(Game game,
+                      Color myColor,
+                      int wSelfLife, 
+                      int wDiffLives, 
+                      int wSquareThreshold, 
+                      int wSelfSpreadBelowThreshold, 
+                      int wSelfSpreadAboveThreshold, 
+                      int wOpponentSpread, 
+                      int wSelfInDanger, 
+                      int wOpponentInDangerBelowThreshold, 
+                      int wOpponentInDangerAboveThreshold) {
+            gameStates.Push(game);
+            this.myColor = myColor;
+            this.wSelfLife = wSelfLife;
+            this.wDiffLives = wDiffLives;
+            this.wSquareThreshold = wSquareThreshold;
+            this.wSelfSpreadBelowThreshold = wSelfSpreadBelowThreshold;
+            this.wSelfSpreadAboveThreshold = wSelfSpreadAboveThreshold;
+            this.wOpponentSpread = wOpponentSpread;
+            this.wSelfInDanger = wSelfInDanger;
+            this.wOpponentInDangerBelowThreshold = wOpponentInDangerBelowThreshold;
+            this.wOpponentInDangerAboveThreshold = wOpponentInDangerAboveThreshold;
+        }
         }
     }
 }
