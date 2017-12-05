@@ -28,5 +28,12 @@ namespace PushySquares {
             }
         }
     }
+
+    public class GameAI {
+        Stack<Game> gameStates = new Stack<Game>();
+        Game CurrentGame => gameStates.Peek();
+
+        readonly Color myColor;
+        }
     }
 }
