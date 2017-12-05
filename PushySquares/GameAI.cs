@@ -72,6 +72,15 @@ namespace PushySquares {
         public int EvaluateHeuristics() {
             var livingPlayers = CurrentGame.Players.Where(x => x.Lives > 0).ToList();
             var me = CurrentGame.GetPlayer(myColor);
+            if (me.Lives == 0) {
+                return int.MinValue;
+            }
+            if (livingPlayers.Count == 1 && me.Lives > 0) {
+                return int.MaxValue;
+            }
+            if (livingPlayers.Count == 0) {
+                return 0;
+            }
         }
         }
     }
