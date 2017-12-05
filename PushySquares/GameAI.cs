@@ -33,6 +33,16 @@ namespace PushySquares {
         Stack<Game> gameStates = new Stack<Game>();
         Game CurrentGame => gameStates.Peek();
 
+        readonly int wSelfLife;
+        readonly int wDiffLives;
+        readonly int wSquareThreshold;
+        readonly int wSelfSpreadBelowThreshold;
+        readonly int wSelfSpreadAboveThreshold;
+        readonly int wOpponentSpread;
+        readonly int wSelfInDanger;
+        readonly int wOpponentInDangerBelowThreshold;
+        readonly int wOpponentInDangerAboveThreshold;
+
         readonly Color myColor;
         }
     }
