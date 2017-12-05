@@ -68,6 +68,11 @@ namespace PushySquares {
             this.wOpponentInDangerBelowThreshold = wOpponentInDangerBelowThreshold;
             this.wOpponentInDangerAboveThreshold = wOpponentInDangerAboveThreshold;
         }
+
+        public int EvaluateHeuristics() {
+            var livingPlayers = CurrentGame.Players.Where(x => x.Lives > 0).ToList();
+            var me = CurrentGame.GetPlayer(myColor);
+        }
         }
     }
 }
