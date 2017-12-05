@@ -82,6 +82,11 @@ namespace PushySquares {
                 return 0;
             }
             var finalSelfLives = me.Lives;
+            var opponents = CurrentGame.OpponentsOf(myColor);
+            var finalDiffLives = 0;
+            if (livingPlayers.Count == 2) {
+                finalDiffLives = me.Lives - CurrentGame.GetPlayer(opponents.First()).Lives;
+            }
         }
         }
     }
