@@ -81,6 +81,7 @@ namespace PushySquares {
             if (livingPlayers.Count == 0) {
                 return 0;
             }
+            var finalSelfLives = me.Lives;
         }
         }
     }
