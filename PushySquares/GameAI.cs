@@ -89,6 +89,7 @@ namespace PushySquares {
             }
             var mySquares = CurrentGame.Board.PositionsOf(myColor);
             var finalSelfSpread = -GetSpread(mySquares, CurrentGame.Spawnpoints[myColor]);
+            var finalOpponentSpread = opponents.Select(x => GetSpread(CurrentGame.Board.PositionsOf(x), CurrentGame.Spawnpoints[x])).Sum() / opponents.Count;
         }
         }
     }
