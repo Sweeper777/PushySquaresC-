@@ -107,6 +107,14 @@ namespace PushySquares {
                 finalSelfInDanger * wSelfInDanger +
                 finalOpponentInDanger * (mySquares.Count < wSquareThreshold ? wOpponentInDangerBelowThreshold : wOpponentInDangerAboveThreshold);
         }
+        int GetSpread(List<Position> positions, Position pivot) {
+            var maxX = positions.Select(x => Math.Abs(x.X - pivot.X));
+            var maxY = positions.Select(x => Math.Abs(x.Y - pivot.Y));
+            if (maxX.Count() != 0 && maxY.Count() != 0) {
+                return Math.Max(maxX.Max(), maxY.Max());
+            }
+            return 0;
+        }
         }
     }
 }
