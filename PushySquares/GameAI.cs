@@ -95,6 +95,11 @@ namespace PushySquares {
                 return int.MinValue;
             }
             var finalSelfInDanger = -selfInDanger;
+            var opponentInDanger = 0;
+            foreach (var opponent in opponents) {
+                opponentInDanger += CurrentGame.Board.PositionsOf(opponent).Select(x => IsInDanger(x, IsEdge(x), opponent)).Where(x => x).Count();
+            }
+            var finalOpponentInDanger = opponentInDanger;
         }
         }
     }
