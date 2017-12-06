@@ -115,6 +115,24 @@ namespace PushySquares {
             }
             return 0;
         }
+
+        List<Direction> IsEdge(Position position) {
+            var edges = new List<Direction>();
+            if (CurrentGame.Board.ItemAt(position.Above) == Tile.Void) {
+                edges.Add(Direction.Up);
+            }
+            if (CurrentGame.Board.ItemAt(position.Below) == Tile.Void) {
+                edges.Add(Direction.Down);
+            }
+            if (CurrentGame.Board.ItemAt(position.Left) == Tile.Void) {
+                edges.Add(Direction.Left);
+            }
+            if (CurrentGame.Board.ItemAt(position.Right) == Tile.Void) {
+                edges.Add(Direction.Right);
+            }
+            return edges;
+        }
+
         }
     }
 }
