@@ -87,6 +87,8 @@ namespace PushySquares {
             if (livingPlayers.Count == 2) {
                 finalDiffLives = me.Lives - CurrentGame.GetPlayer(opponents.First()).Lives;
             }
+            var mySquares = CurrentGame.Board.PositionsOf(myColor);
+            var finalSelfSpread = -GetSpread(mySquares, CurrentGame.Spawnpoints[myColor]);
         }
         }
     }
