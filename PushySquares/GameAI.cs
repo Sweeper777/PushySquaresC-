@@ -100,6 +100,12 @@ namespace PushySquares {
                 opponentInDanger += CurrentGame.Board.PositionsOf(opponent).Select(x => IsInDanger(x, IsEdge(x), opponent)).Where(x => x).Count();
             }
             var finalOpponentInDanger = opponentInDanger;
+            return finalSelfLives * wSelfLife +
+                finalDiffLives * wDiffLives +
+                finalSelfSpread * (mySquares.Count < wSquareThreshold ? wSelfSpreadBelowThreshold : wSelfSpreadAboveThreshold) +
+                finalOpponentSpread * wOpponentSpread +
+                finalSelfInDanger * wSelfInDanger +
+                finalOpponentInDanger * (mySquares.Count < wSquareThreshold ? wOpponentInDangerBelowThreshold : wOpponentInDangerAboveThreshold);
         }
         }
     }
