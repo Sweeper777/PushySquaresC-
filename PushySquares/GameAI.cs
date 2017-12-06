@@ -90,6 +90,11 @@ namespace PushySquares {
             var mySquares = CurrentGame.Board.PositionsOf(myColor);
             var finalSelfSpread = -GetSpread(mySquares, CurrentGame.Spawnpoints[myColor]);
             var finalOpponentSpread = opponents.Select(x => GetSpread(CurrentGame.Board.PositionsOf(x), CurrentGame.Spawnpoints[x])).Sum() / opponents.Count;
+            var selfInDanger = mySquares.Select(x => IsInDanger(x, IsEdge(x), myColor)).Where(x => x).Count();
+            if (selfInDanger >= me.Lives) {
+                return int.MinValue;
+            }
+            var finalSelfInDanger = -selfInDanger;
         }
         }
     }
