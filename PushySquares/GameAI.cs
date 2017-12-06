@@ -133,6 +133,37 @@ namespace PushySquares {
             return edges;
         }
 
+        bool IsInDanger(Position position, List<Direction> edges, Color c) {
+            foreach (var edge in edges) {
+                Func<Position, Position> translate = null;
+                switch (edge) {
+                    case Direction.Down:
+                        translate = x => x.Above;
+                        break;
+                    case Direction.Up:
+                        translate = x => x.Below;
+                        break;
+                    case Direction.Left:
+                        translate = x => x.Right;
+                        break;
+                    case Direction.Right:
+                        translate = x => x.Left;
+                        break;
+                }
+                var curr = position;
+                while (true) {
+                    curr = translate(curr);
+                    var tile = CurrentGame.Board.ItemAt(curr);
+                    if (tile == Tile.Empty || tile == Tile.Void || tile == Tile.Wall) {
+                        break;
+                    }
+                    if (tile != TileExtensions.FromColor(c)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
         }
     }
 }
