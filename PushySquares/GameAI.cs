@@ -164,6 +164,11 @@ namespace PushySquares {
             }
             return false;
         }
+
+        Tuple<int, Direction> Minimax(int depth, Color color) {
+            var bestScore = color == myColor ? int.MinValue : int.MaxValue;
+            int currentScore;
+            Direction? bestDirection = null;
         }
     }
 }
