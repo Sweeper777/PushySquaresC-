@@ -9,6 +9,7 @@ namespace PushySquares {
             //Console.WriteLine(game);
             //game.MoveDown();
             //Console.WriteLine(game);
+            AIMatch();
         }
 
         public static void PlayGame()
@@ -80,4 +81,16 @@ namespace PushySquares {
             }
         }
 
+        public static void AIMatch()
+        {
+            Game game = new Game(Map.Standard, 4);
+            Console.WriteLine(game);
+            while (game.Players.Where(x => x.Lives > 0).Count() > 1)
+            {
+                var ai = new GameAI(game.CreateCopy(), game.CurrentPlayer.Color, 553, 8371, 3, 5646, 3791, 8583, 6187, 680, 9157);
+                game.Move(ai.NextMove());
+                Console.WriteLine(game);
+            }
+        }
+    }
 }
