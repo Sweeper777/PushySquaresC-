@@ -172,7 +172,30 @@ namespace PushySquares {
             if (CurrentGame.Players.Where(x => x.Lives > 0).Count() < 2 || depth == 0) {
                 bestScore = EvaluateHeuristics();
             } else {
+                var squareCount = CurrentGame.Board.PositionsOf(color).Count;
+                var moves = squareCount == 0 ? new[] { Direction.Up } : new[] { Direction.Up, Direction.Down, Direction.Left, Direction.Right };
+                foreach (var move in moves) {
+                    var gameCopy = CurrentGame.CreateCopy();
+                    gameCopy.Move(move);
+                    gameStates.Push(gameCopy);
+                    if (color == myColor) {
+                        currentScore = Minimax(depth - 1, CurrentGame.CurrentPlayer.Color).Item1;
+                        if (currentScore > bestScore) {
+                            bestScore = currentScore;
+                            bestDirection = move;
+                        }
+                    } else {
+                        currentScore = Minimax(depth - 1, CurrentGame.CurrentPlayer.Color).Item1;
+                        if (currentScore < bestScore)
+                        {
+                            bestScore = currentScore;
+                            bestDirection = move;
+                        }
+                    }
+                    gameStates.Pop();
+                }
             }
+            return new Tuple<int, Direction>(bestScore, bestDirection ?? Direction.Left);
         }
     }
 }
