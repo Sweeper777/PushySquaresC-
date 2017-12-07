@@ -1,19 +1,33 @@
 ﻿using System;
 
 namespace PushySquares {
+    /// <summary>
+    /// Represents the color of a particular square on the board.
+    /// </summary>
 	public enum Color {
 		Color1 = 1, Color2 = 2, Color3 = 3, Color4 = 4, Grey = 0
 	}
 
+    /// <summary>
+    /// Represents the direction of a move that a player makes.
+    /// </summary>
 	public enum Direction {
 		Up, Down, Left, Right
 	}
 
+    /// <summary>
+    /// Represents a part of the board. The board is a matrix of tiles.
+    /// </summary>
 	public enum Tile {
 		Empty, Void, Wall, SquareColor1, SquareColor2, SquareColor3, SquareColor4, SquareGrey
 	}
 
 	public static class TileExtensions {
+        /// <summary>
+        /// Gets the square <see cref="T:PushySquares.Tile"/> that is of a given color.
+        /// </summary>
+        /// <returns>A square <see cref="T:PushySquares.Tile"/> that has the same color as the parameter.</returns>
+        /// <param name="color">The color of the returned <see cref="T:PushySquares.Tile"/>.</param>
 		public static Tile FromColor(Color color) {
 			switch (color) {
 			case Color.Color1:
