@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 namespace PushySquares {
@@ -107,6 +107,11 @@ namespace PushySquares {
                 finalSelfInDanger * wSelfInDanger +
                 finalOpponentInDanger * (mySquares.Count < wSquareThreshold ? wOpponentInDangerBelowThreshold : wOpponentInDangerAboveThreshold);
         }
+
+        public Direction NextMove() {
+            return Minimax(6, myColor).Item2;
+        }
+
         int GetSpread(List<Position> positions, Position pivot) {
             var maxX = positions.Select(x => Math.Abs(x.X - pivot.X));
             var maxY = positions.Select(x => Math.Abs(x.Y - pivot.Y));
