@@ -169,6 +169,10 @@ namespace PushySquares {
             var bestScore = color == myColor ? int.MinValue : int.MaxValue;
             int currentScore;
             Direction? bestDirection = null;
+            if (CurrentGame.Players.Where(x => x.Lives > 0).Count() < 2 || depth == 0) {
+                bestScore = EvaluateHeuristics();
+            } else {
+            }
         }
     }
 }
