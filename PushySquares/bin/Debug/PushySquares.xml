@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PushySquares</name>
+    </assembly>
+    <members>
+        <member name="T:PushySquares.Color">
+            <summary>
+            Represents the color of a particular square on the board.
+            </summary>
+        </member>
+        <member name="T:PushySquares.Direction">
+            <summary>
+            Represents the direction of a move that a player makes.
+            </summary>
+        </member>
+        <member name="T:PushySquares.Tile">
+            <summary>
+            Represents a part of the board. The board is a matrix of tiles.
+            </summary>
+        </member>
+        <member name="M:PushySquares.TileExtensions.FromColor(PushySquares.Color)">
+            <summary>
+            Gets the square <see cref="T:PushySquares.Tile"/> that is of a given color.
+            </summary>
+            <returns>A square <see cref="T:PushySquares.Tile"/> that has the same color as the parameter.</returns>
+            <param name="color">The color of the returned <see cref="T:PushySquares.Tile"/>.</param>
+        </member>
+        <member name="T:PushySquares.Position">
+            <summary>
+            Represents a point on the game board.
+            </summary>
+        </member>
+        <member name="P:PushySquares.Position.X">
+            <summary>
+            Gets the X coordinate of the position.
+            </summary>
+            <value>The X coordinate of the position.</value>
+        </member>
+        <member name="P:PushySquares.Position.Y">
+            <summary>
+            Gets the Y position
+            </summary>
+            <value>The Y coordinate of the position</value>
+        </member>
+        <member name="M:PushySquares.Position.GetHashCode">
+            <summary>
+            Serves as a hash function for a <see cref="T:PushySquares.Position"/> object.
+            </summary>
+            <returns>A hash code for this instance that is suitable for use in hashing algorithms and data structures such as a
+            hash table.</returns>
+        </member>
+        <member name="M:PushySquares.Position.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:PushySquares.Position"/>.</returns>
+        </member>
+        <member name="M:PushySquares.Position.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.Position"/> struct with the specified X and Y coordinates.
+            </summary>
+            <param name="x">The x coordinate.</param>
+            <param name="y">The y coordinate.</param>
+        </member>
+        <member name="P:PushySquares.Position.Above">
+            <summary>
+            Gets a <see cref="T:PushySquares.Position"/> that represents a point on the board one 
+            tile on top of this <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <value>The <see cref="T:PushySquares.Position"/> above this.</value>
+        </member>
+        <member name="P:PushySquares.Position.Below">
+            <summary>
+            Gets a <see cref="T:PushySquares.Position"/> that represents a point on the board one 
+            tile below this <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <value>The <see cref="T:PushySquares.Position"/> below this.</value>
+        </member>
+        <member name="P:PushySquares.Position.Right">
+            <summary>
+            Gets a <see cref="T:PushySquares.Position"/> that represents a point on the board one 
+            tile to the right of this <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <value>The <see cref="T:PushySquares.Position"/> to the right of this.</value>
+        </member>
+        <member name="P:PushySquares.Position.Left">
+            <summary>
+            Gets a <see cref="T:PushySquares.Position"/> that represents a point on the board one 
+            tile to the left of this <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <value>The <see cref="T:PushySquares.Position"/> to the right of this.</value>
+        </member>
+        <member name="M:PushySquares.ArrayExtensions.ItemAt``1(``0[0:,0:],PushySquares.Position)">
+            <summary>
+            Returns a reference of the element in the 2D array that is at a specific 
+            <see cref="T:PushySquares.Position"/>.
+            </summary>
+            <returns>The elemnt in the 2D array that is at a specific <see cref="T:PushySquares.Position"/>.</returns>
+            <param name="array">The 2D array.</param>
+            <param name="pos">The position.</param>
+            <typeparam name="T">The type of the 2D array.</typeparam>
+        </member>
+        <member name="M:PushySquares.ArrayExtensions.PositionsOf(PushySquares.Tile[0:,0:],PushySquares.Tile)">
+            <summary>
+            Finds all the positions in the 2D array of <see cref="T:PushySquares.Tile"/> that matches 
+            the specified <see cref="T:PushySquares.Tile"/>.
+            </summary>
+            <returns>The positions in the 2D array of <see cref="T:PushySquares.Tile"/> that matches 
+            the specified <see cref="T:PushySquares.Tile"/>.</returns>
+            <param name="array">The 2D array.</param>
+            <param name="tile">The tile to look for.</param>
+        </member>
+        <member name="M:PushySquares.ArrayExtensions.PositionsOf(PushySquares.Tile[0:,0:],PushySquares.Color)">
+            <summary>
+            Finds all the positions in the 2D array of <see cref="T:PushySquares.Tile"/> that matches 
+            the specified <see cref="T:PushySquares.Color"/>.
+            </summary>
+            <returns>The positions in the 2D array of <see cref="T:PushySquares.Tile"/> that matches 
+            the specified <see cref="T:PushySquares.Color"/>.</returns>
+            <param name="array">The 2D array.</param>
+            <param name="color">The color to look for.</param>
+        </member>
+        <member name="T:PushySquares.Map">
+            <summary>
+            Represnets an arrangement of holes, walls, initial squares and spawnpoints used in a game of 
+            PushySquares.
+            </summary>
+        </member>
+        <member name="P:PushySquares.Map.Board">
+            <summary>
+            Gets the game board.
+            </summary>
+            <value>The game board.</value>
+        </member>
+        <member name="P:PushySquares.Map.Spawnpoints">
+            <summary>
+             Gets or sets the spawnpoints.
+            </summary>
+            <value>The spawnpoints.</value>
+        </member>
+        <member name="F:PushySquares.Map.Standard">
+            <summary>
+            The standard map used in a standard game of PushySquares.
+            </summary>
+        </member>
+        <member name="M:PushySquares.Map.#ctor(PushySquares.Tile[0:,0:],System.Collections.Generic.Dictionary{PushySquares.Color,PushySquares.Position})">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.Map"/> struct with the specifed
+            board configuration and spawnpoints.
+            </summary>
+            <param name="board">The initial board configuration.</param>
+            <param name="spawnpoints">The spawnpoints.</param>
+        </member>
+        <member name="M:PushySquares.Map.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.Map"/> struct with a string
+            representing the initial map configuration and spawnpoints
+            </summary>
+            <param name="mapString">The string representing the initial map configuration and
+            spawnpoints</param>
+            <remarks>
+            The map string must be a matrix of characters, with new rows denoted by new line 
+            characters. This table shows what character corresponds to what <see cref="T:PushySquares.Tile"/>.
+            <list type="table">
+                <item>
+                    <item><code>.</code></item>
+                    <item><see cref="E:PushySquares.Tile.Void"/></item>
+                </item>
+                <item>
+                    <item><code>+</code></item>
+                    <item><see cref="E:PushySquares.Tile.Empty"/></item>
+                </item>
+                 <item>
+                    <item><code>O</code></item>
+                    <item><see cref="E:PushySquares.Tile.Wall"/></item>
+                </item>
+                 <item>
+                    <item><code>1</code></item>
+                    <item>Spawnpoint for <see cref="E:PushySquares.Color.Color1"/></item>
+                </item>
+                 <item>
+                    <item><code>2</code></item>
+                    <item>Spawnpoint for <see cref="E:PushySquares.Color.Color2"/></item>
+                </item>
+                 <item>
+                    <item><code>3</code></item>
+                    <item>Spawnpoint for <see cref="E:PushySquares.Color.Color3"/></item>
+                </item>
+                 <item>
+                    <item><code>4</code></item>
+                    <item>Spawnpoint for <see cref="E:PushySquares.Color.Color4"/></item>
+                </item>
+            </list>
+            </remarks>
+        </member>
+    </members>
+</doc>
