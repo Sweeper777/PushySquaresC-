@@ -1,0 +1,92 @@
+\hypertarget{namespace_pushy_squares}{}\section{Pushy\+Squares Namespace Reference}
+\label{namespace_pushy_squares}\index{Pushy\+Squares@{Pushy\+Squares}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Array\+Extensions}
+\item 
+class \hyperlink{class_pushy_squares_1_1_game}{Game}
+\item 
+class \hyperlink{class_pushy_squares_1_1_game_a_i}{Game\+AI}
+\item 
+class {\bfseries Game\+Extensions}
+\item 
+class \hyperlink{class_pushy_squares_1_1_main_class}{Main\+Class}
+\item 
+struct \hyperlink{struct_pushy_squares_1_1_map}{Map}
+\begin{DoxyCompactList}\small\item\em Represnets an arrangement of holes, walls, initial squares and spawnpoints used in a game of \hyperlink{namespace_pushy_squares}{Pushy\+Squares}. \end{DoxyCompactList}\item 
+class \hyperlink{class_pushy_squares_1_1_player}{Player}
+\item 
+struct \hyperlink{struct_pushy_squares_1_1_position}{Position}
+\begin{DoxyCompactList}\small\item\em Represents a point on the game board. \end{DoxyCompactList}\item 
+class {\bfseries Tile\+Extensions}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color} \{ \newline
+{\bfseries Color1} = 1, 
+{\bfseries Color2} = 2, 
+{\bfseries Color3} = 3, 
+{\bfseries Color4} = 4, 
+\newline
+{\bfseries Grey} = 0
+ \}\begin{DoxyCompactList}\small\item\em Represents the color of a particular square on the board. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_pushy_squares_acc0b0bbd9a5171048a288222e2a4d00b}{Direction} \{ {\bfseries Up}, 
+{\bfseries Down}, 
+{\bfseries Left}, 
+{\bfseries Right}
+ \}\begin{DoxyCompactList}\small\item\em Represents the direction of a move that a player makes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Tile} \{ \newline
+{\bfseries Empty}, 
+{\bfseries Void}, 
+{\bfseries Wall}, 
+{\bfseries Square\+Color1}, 
+\newline
+{\bfseries Square\+Color2}, 
+{\bfseries Square\+Color3}, 
+{\bfseries Square\+Color4}, 
+{\bfseries Square\+Grey}
+ \}\begin{DoxyCompactList}\small\item\em Represents a part of the board. The board is a matrix of tiles. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_pushy_squares_a3ebf2fe7f6c3a2dabb69f9bcf460897b}\label{namespace_pushy_squares_a3ebf2fe7f6c3a2dabb69f9bcf460897b}} 
+delegate void {\bfseries Game\+Delegate} (\hyperlink{namespace_pushy_squares_acc0b0bbd9a5171048a288222e2a4d00b}{Direction}? direction, List$<$ \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$ original\+Positions, List$<$ \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$ destroyed\+Squares\+Positions, List$<$ \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$ greyed\+Out\+Positions, \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color}? new\+Square\+Color)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}\label{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}} 
+\index{Pushy\+Squares@{Pushy\+Squares}!Color@{Color}}
+\index{Color@{Color}!Pushy\+Squares@{Pushy\+Squares}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Pushy\+Squares.\+Color}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents the color of a particular square on the board. 
+
+\mbox{\Hypertarget{namespace_pushy_squares_acc0b0bbd9a5171048a288222e2a4d00b}\label{namespace_pushy_squares_acc0b0bbd9a5171048a288222e2a4d00b}} 
+\index{Pushy\+Squares@{Pushy\+Squares}!Direction@{Direction}}
+\index{Direction@{Direction}!Pushy\+Squares@{Pushy\+Squares}}
+\subsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_pushy_squares_acc0b0bbd9a5171048a288222e2a4d00b}{Pushy\+Squares.\+Direction}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents the direction of a move that a player makes. 
+
+\mbox{\Hypertarget{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}\label{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}} 
+\index{Pushy\+Squares@{Pushy\+Squares}!Tile@{Tile}}
+\index{Tile@{Tile}!Pushy\+Squares@{Pushy\+Squares}}
+\subsubsection{\texorpdfstring{Tile}{Tile}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Pushy\+Squares.\+Tile}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents a part of the board. The board is a matrix of tiles. 
+

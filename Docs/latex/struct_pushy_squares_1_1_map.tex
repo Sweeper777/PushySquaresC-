@@ -1,0 +1,156 @@
+\hypertarget{struct_pushy_squares_1_1_map}{}\section{Pushy\+Squares.\+Map Struct Reference}
+\label{struct_pushy_squares_1_1_map}\index{Pushy\+Squares.\+Map@{Pushy\+Squares.\+Map}}
+
+
+Represnets an arrangement of holes, walls, initial squares and spawnpoints used in a game of \hyperlink{namespace_pushy_squares}{Pushy\+Squares}.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_pushy_squares_1_1_map_aa1b0c05acd50a2f77f48f6d07de19afb}{Map} (\hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Tile}\mbox{[},\mbox{]} board, Dictionary$<$ \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color}, \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$ spawnpoints)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the T\+:\+Pushy\+Squares.\+Map struct with the specifed board configuration and spawnpoints. \end{DoxyCompactList}\item 
+\hyperlink{struct_pushy_squares_1_1_map_a2bc179f99cc9b1d592a249a3dc83e2c4}{Map} (string map\+String)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the T\+:\+Pushy\+Squares.\+Map struct with a string representing the initial map configuration and spawnpoints \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \hyperlink{struct_pushy_squares_1_1_map}{Map} \hyperlink{struct_pushy_squares_1_1_map_aae0947b0379bf76f1a7df5e7c48344fe}{Standard}
+\begin{DoxyCompactList}\small\item\em The standard map used in a standard game of \hyperlink{namespace_pushy_squares}{Pushy\+Squares}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Tile} \mbox{[},\mbox{]} \hyperlink{struct_pushy_squares_1_1_map_a3c11187234afb489b5a30f4c32cd1a14}{Board}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the game board. \end{DoxyCompactList}\item 
+Dictionary$<$ \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color}, \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$ \hyperlink{struct_pushy_squares_1_1_map_a72e3082cfaee94b86c3a1b02f5bda0e9}{Spawnpoints}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the spawnpoints. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represnets an arrangement of holes, walls, initial squares and spawnpoints used in a game of \hyperlink{namespace_pushy_squares}{Pushy\+Squares}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_pushy_squares_1_1_map_aa1b0c05acd50a2f77f48f6d07de19afb}\label{struct_pushy_squares_1_1_map_aa1b0c05acd50a2f77f48f6d07de19afb}} 
+\index{Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}!Map@{Map}}
+\index{Map@{Map}!Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}}
+\subsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Pushy\+Squares.\+Map.\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Tile}}]{board\mbox{[},\mbox{]},  }\item[{Dictionary$<$ \hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color}, \hyperlink{struct_pushy_squares_1_1_position}{Position} $>$}]{spawnpoints }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the T\+:\+Pushy\+Squares.\+Map struct with the specifed board configuration and spawnpoints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & The initial board configuration.\\
+\hline
+{\em spawnpoints} & The spawnpoints.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_pushy_squares_1_1_map_a2bc179f99cc9b1d592a249a3dc83e2c4}\label{struct_pushy_squares_1_1_map_a2bc179f99cc9b1d592a249a3dc83e2c4}} 
+\index{Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}!Map@{Map}}
+\index{Map@{Map}!Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}}
+\subsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Pushy\+Squares.\+Map.\+Map (\begin{DoxyParamCaption}\item[{string}]{map\+String }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the T\+:\+Pushy\+Squares.\+Map struct with a string representing the initial map configuration and spawnpoints 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+String} & The string representing the initial map configuration and spawnpoints\\
+\hline
+\end{DoxyParams}
+
+
+The map string must be a matrix of characters, with new rows denoted by new line characters. This table shows what character corresponds to what T\+:\+Pushy\+Squares.\+Tile. \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{0}{|X[-1]}|}
+\hline
+\\
+\end{longtabu}
+
+\begin{DoxyCode}
+.
+\end{DoxyCode}
+ E\+:\+Pushy\+Squares.\+Tile.\+Void   
+\begin{DoxyCode}
++
+\end{DoxyCode}
+ E\+:\+Pushy\+Squares.\+Tile.\+Empty   
+\begin{DoxyCode}
+O
+\end{DoxyCode}
+ E\+:\+Pushy\+Squares.\+Tile.\+Wall   
+\begin{DoxyCode}
+1
+\end{DoxyCode}
+ Spawnpoint for E\+:\+Pushy\+Squares.\+Color.\+Color1   
+\begin{DoxyCode}
+2
+\end{DoxyCode}
+ Spawnpoint for E\+:\+Pushy\+Squares.\+Color.\+Color2   
+\begin{DoxyCode}
+3
+\end{DoxyCode}
+ Spawnpoint for E\+:\+Pushy\+Squares.\+Color.\+Color3   
+\begin{DoxyCode}
+4
+\end{DoxyCode}
+ Spawnpoint for E\+:\+Pushy\+Squares.\+Color.\+Color4  
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_pushy_squares_1_1_map_aae0947b0379bf76f1a7df5e7c48344fe}\label{struct_pushy_squares_1_1_map_aae0947b0379bf76f1a7df5e7c48344fe}} 
+\index{Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}!Standard@{Standard}}
+\index{Standard@{Standard}!Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}}
+\subsubsection{\texorpdfstring{Standard}{Standard}}
+{\footnotesize\ttfamily readonly \hyperlink{struct_pushy_squares_1_1_map}{Map} Pushy\+Squares.\+Map.\+Standard\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} \hyperlink{struct_pushy_squares_1_1_map_aa1b0c05acd50a2f77f48f6d07de19afb}{Map}(
+\textcolor{stringliteral}{@"....OO....}
+\textcolor{stringliteral}{.1++++++2.}
+\textcolor{stringliteral}{.++++++++.}
+\textcolor{stringliteral}{.++++++++.}
+\textcolor{stringliteral}{O+++OO+++O}
+\textcolor{stringliteral}{O+++OO+++O}
+\textcolor{stringliteral}{.++++++++.}
+\textcolor{stringliteral}{.++++++++.}
+\textcolor{stringliteral}{.4++++++3.}
+\textcolor{stringliteral}{....OO...."})
+\end{DoxyCode}
+
+
+The standard map used in a standard game of \hyperlink{namespace_pushy_squares}{Pushy\+Squares}. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{struct_pushy_squares_1_1_map_a3c11187234afb489b5a30f4c32cd1a14}\label{struct_pushy_squares_1_1_map_a3c11187234afb489b5a30f4c32cd1a14}} 
+\index{Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}!Board@{Board}}
+\index{Board@{Board}!Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}}
+\subsubsection{\texorpdfstring{Board}{Board}}
+{\footnotesize\ttfamily \hyperlink{namespace_pushy_squares_a99b558ed55fb7c5c20e9fe37c652132c}{Tile} \mbox{[},\mbox{]} Pushy\+Squares.\+Map.\+Board\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the game board. 
+
+The game board.\mbox{\Hypertarget{struct_pushy_squares_1_1_map_a72e3082cfaee94b86c3a1b02f5bda0e9}\label{struct_pushy_squares_1_1_map_a72e3082cfaee94b86c3a1b02f5bda0e9}} 
+\index{Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}!Spawnpoints@{Spawnpoints}}
+\index{Spawnpoints@{Spawnpoints}!Pushy\+Squares\+::\+Map@{Pushy\+Squares\+::\+Map}}
+\subsubsection{\texorpdfstring{Spawnpoints}{Spawnpoints}}
+{\footnotesize\ttfamily Dictionary$<$\hyperlink{namespace_pushy_squares_a456c990da0c8e2089c171d31f7e27574}{Color}, \hyperlink{struct_pushy_squares_1_1_position}{Position}$>$ Pushy\+Squares.\+Map.\+Spawnpoints\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the spawnpoints. 
+
+The spawnpoints.
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pushy\+Squares/Map.\+cs\end{DoxyCompactItemize}
