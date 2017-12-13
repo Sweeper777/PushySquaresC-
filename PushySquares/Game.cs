@@ -5,19 +5,50 @@ using System.Text;
 
 namespace PushySquares
 {
+    /// <summary>
+    /// Represents a game of PushySquares.
+    /// </summary>
     public class Game
     {
+        /// <summary>
+        /// A dictionary that maps the number of players to how many turns should a new square spawn.
+        /// </summary>
         public static readonly Dictionary<int, int> PlayerCountToTurnsUntilNewSquare = new Dictionary<int, int>() {
             { 2, 2 },
             { 3, 4 },
             { 4, 4 }
         };
 
+        /// <summary>
+        /// Gets or sets the game board.
+        /// </summary>
+        /// <value>The game board.</value>
         public Tile[,] Board { get; set; }
+
+        /// <summary>
+        /// Gets or sets the spawnpoints for each color.
+        /// </summary>
+        /// <value>The spawnpoints.</value>
         public Dictionary<Color, Position> Spawnpoints { get; set; }
+
+        /// <summary>
+        /// Gets or sets the players in this game.
+        /// </summary>
+        /// <value>The players.</value>
         public List<Player> Players { get; set; }
         private int currentPlayerIndex = 0;
+
+        /// <summary>
+        /// Gets the current player. The current player is the player that will make a move in the
+        /// current turn.
+        /// </summary>
+        /// <value>The current player.</value>
         public Player CurrentPlayer => Players[currentPlayerIndex];
+
+        /// <summary>
+        /// Gets or sets the delegate. The delegate will be invoked when a player makes a move
+        /// </summary>
+        /// <value>The delegate.</value>
         public GameDelegate Delegate { get; set; }
 
         public Game(Map map, int playerCount, int lives = 5)
