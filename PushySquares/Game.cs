@@ -303,6 +303,9 @@ namespace PushySquares
         }
     }
 
+    /// <summary>
+    /// Represents a method that will be called when a player makes a move.
+    /// </summary>
     public delegate void GameDelegate(Direction? direction,
                                       List<Position> originalPositions,
                                       List<Position> destroyedSquaresPositions,
