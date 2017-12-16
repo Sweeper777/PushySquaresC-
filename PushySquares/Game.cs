@@ -51,6 +51,13 @@ namespace PushySquares
         /// <value>The delegate.</value>
         public GameDelegate Delegate { get; set; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PushySquares.Game"/> class with the
+        /// specified map, number of players, and lives for each player.
+        /// </summary>
+        /// <param name="map">The <see cref="T:PushySquares.Map"/> to be used in this game.</param>
+        /// <param name="playerCount">Number of players.</param>
+        /// <param name="lives">Number of lives for each player.</param>
         public Game(Map map, int playerCount, int lives = 5)
         {
             Board = map.Board;
