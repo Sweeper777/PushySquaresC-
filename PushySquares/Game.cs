@@ -127,6 +127,12 @@ namespace PushySquares
             Move(x => x.Left, (x, y) => x.X.CompareTo(y.X), Direction.Left);
         }
 
+        /// <summary>
+        /// Returns a <see cref="T:System.String"/> that represents the current <see cref="T:PushySquares.Game"/>.
+        /// </summary>
+        /// <returns>A <see cref="T:System.String"/> that shows the current player's 
+        /// <see cref="Player.TurnsUntilNewSquare"/>, <see cref="Player.Lives"/> of all the players,
+        /// and the current game board.</returns>
         public override string ToString()
         {
             var builder = new StringBuilder();
