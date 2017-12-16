@@ -95,21 +95,33 @@ namespace PushySquares
 
         Game() { }
 
+        /// <summary>
+        /// Attempts to move all of the current player's squares downwards.
+        /// </summary>
         public void MoveDown()
         {
             Move(x => x.Below, (x, y) => y.Y.CompareTo(x.Y), Direction.Down);
         }
 
+        /// <summary>
+        /// Attempts to move all of the current player's squares upwards.
+        /// </summary>
         public void MoveUp()
         {
             Move(x => x.Above, (x, y) => x.Y.CompareTo(y.Y), Direction.Up);
         }
 
+        /// <summary>
+        /// Attempts to move all of the current player's squares to the right.
+        /// </summary>
         public void MoveRight()
         {
             Move(x => x.Right, (x, y) => y.X.CompareTo(x.X), Direction.Right);
         }
 
+        /// <summary>
+        /// Attempts to move all of the current player's squares to the left.
+        /// </summary>
         public void MoveLeft()
         {
             Move(x => x.Left, (x, y) => x.X.CompareTo(y.X), Direction.Left);
