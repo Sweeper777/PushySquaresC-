@@ -2,15 +2,37 @@
 using System.Linq;
 using System.Collections.Generic;
 namespace PushySquares {
+    /// <summary>
+    /// A class containing extension methods for <see cref="Game"/>.
+    /// </summary>
     public static class GameExtensions {
+        /// <summary>
+        /// Gets the <see cref="Player"/> object whose <see cref="Player.Color"/> property is the specifed color.
+        /// </summary>
+        /// <returns>The <see cref="Player"/> object whose <see cref="Player.Color"/> property is the specifed color.</returns>
+        /// <param name="game">The game that the player is in.</param>
+        /// <param name="color">The color of the player to be returned.</param>
         public static Player GetPlayer(this Game game, Color color) {
             return game.Players.Where(x => x.Color == color).First();
         }
 
+        /// <summary>
+        /// Gets the opponents for the player of the specified color.
+        /// </summary>
+        /// <returns>The opponents for the player of the specified color.</returns>
+        /// <param name="game">The game that the player is in.</param>
+        /// <param name="color">The specified color.</param>
         public static List<Color> OpponentsOf(this Game game, Color color) {
             return game.Players.Where(x => x.Color != color).Select(x => x.Color).ToList();
         }
 
+        /// <summary>
+        /// Attempts to move all of the current player's squares in a specific direction. This is
+        /// equivalent to calling the appropriate <see cref="Game.MoveUp()"/>, 
+        /// <see cref="Game.MoveDown()"/>, <see cref="Game.MoveLeft()"/> and <see cref="Game.MoveRight()"/> methods.
+        /// </summary>
+        /// <param name="game">The game.</param>
+        /// <param name="direction">The direction in which the player's squares should be moved.</param>
         public static void Move(this Game game, Direction direction) {
             switch (direction) {
                 case Direction.Down:
