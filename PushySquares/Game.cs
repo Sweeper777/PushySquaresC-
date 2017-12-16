@@ -184,6 +184,10 @@ namespace PushySquares
             return builder.ToString();
         }
 
+        /// <summary>
+        /// Creates a deep copy of the current game, except for the <see cref="Delegate"/> property.
+        /// </summary>
+        /// <returns>A deep copy of this game.</returns>
         public Game CreateCopy()
         {
             Game copy = new Game();
