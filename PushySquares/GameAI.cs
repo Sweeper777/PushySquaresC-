@@ -51,6 +51,10 @@ namespace PushySquares {
         }
     }
 
+    /// <summary>
+    /// Represents an AI which will decide the best move in a given game if it were a given player in
+    /// that game.
+    /// </summary>
     public class GameAI {
         Stack<Game> gameStates = new Stack<Game>();
         Game CurrentGame => gameStates.Peek();
