@@ -75,6 +75,9 @@ namespace PushySquares {
 		public Position Left => new Position (X - 1, Y);
 	}
 
+    /// <summary>
+    /// A class containing extension methods for a matrix of <see cref="T:PushySquares.Tile"/>.
+    /// </summary>
 	public static class ArrayExtensions {
         /// <summary>
         /// Returns a reference of the element in the 2D array that is at a specific 
