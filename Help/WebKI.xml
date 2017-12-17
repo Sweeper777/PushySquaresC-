@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Above property" Url="html/39afddfa-a602-2fd0-ba49-bd220b9e253f.htm" />
+  <HelpKINode Title="ArrayExtensions class">
+    <HelpKINode Title="ArrayExtensions Class" Url="html/a2ea7eff-4e72-d82d-2fe7-cb2c0d3b1fc6.htm" />
+    <HelpKINode Title="about ArrayExtensions class" Url="html/a2ea7eff-4e72-d82d-2fe7-cb2c0d3b1fc6.htm" />
+    <HelpKINode Title="methods" Url="html/f2d6a32a-2086-62e4-9781-017511ea10b4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ArrayExtensions.ItemAt(Of T) method" Url="html/ca947f5d-0bd6-6de9-4f27-2fcc197e79f6.htm" />
+  <HelpKINode Title="ArrayExtensions.ItemAt&lt;T&gt; method" Url="html/ca947f5d-0bd6-6de9-4f27-2fcc197e79f6.htm" />
+  <HelpKINode Title="ArrayExtensions.PositionsOf method" Url="html/dba3c190-c3e3-8813-1194-b3de045ddcb6.htm" />
+  <HelpKINode Title="Below property" Url="html/c9d23cb3-5bfb-29e6-7a2d-edfde162dbfc.htm" />
+  <HelpKINode Title="Board property">
+    <HelpKINode Title="Game.Board Property " Url="html/d931be10-9e19-1436-db82-c1980fc77af9.htm" />
+    <HelpKINode Title="Map.Board Property " Url="html/be5bad2d-ade7-d7af-ae5f-a2496ef90940.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Color enumeration" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="Color property" Url="html/932489fd-e70b-bb1d-208c-53977f76a80a.htm" />
+  <HelpKINode Title="Color1 enumeration member" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="Color2 enumeration member" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="Color3 enumeration member" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="Color4 enumeration member" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="CreateCopy method">
+    <HelpKINode Title="Game.CreateCopy Method " Url="html/f9ded402-4843-ed15-6676-e9ec692f01c7.htm" />
+    <HelpKINode Title="Player.CreateCopy Method " Url="html/a994ccc4-f224-85cc-97f0-a00b6be26332.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CurrentPlayer property" Url="html/9ee3c2ba-1f96-d94c-a982-6a22506e3b8c.htm" />
+  <HelpKINode Title="Delegate property" Url="html/bb9253e9-6828-56b1-ad73-2a88a934ee57.htm" />
+  <HelpKINode Title="Direction enumeration" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="Down enumeration member" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="Empty enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="EvaluateHeuristics method" Url="html/1bff963f-4051-3b0f-2c70-e7dc2749c9b7.htm" />
+  <HelpKINode Title="FromColor method" Url="html/f086cf40-a9dd-8976-58b0-2cd2c976c6d6.htm" />
+  <HelpKINode Title="Game class">
+    <HelpKINode Title="Game Class" Url="html/66965d14-a87d-e06f-1726-bfc5038d91a7.htm" />
+    <HelpKINode Title="about Game class" Url="html/66965d14-a87d-e06f-1726-bfc5038d91a7.htm" />
+    <HelpKINode Title="constructor" Url="html/588a1098-3457-e03b-f1e1-b1926fb6b0b6.htm" />
+    <HelpKINode Title="fields" Url="html/3453f4ea-ee8b-f421-4e7e-3a526184250f.htm" />
+    <HelpKINode Title="methods" Url="html/dab8a9a3-1a5c-aa69-b0c7-3ca0400a9b54.htm" />
+    <HelpKINode Title="properties" Url="html/b49e3913-8ac9-480c-a57a-f4f0ffdc8b90.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Game.Board property" Url="html/d931be10-9e19-1436-db82-c1980fc77af9.htm" />
+  <HelpKINode Title="Game.CreateCopy method" Url="html/f9ded402-4843-ed15-6676-e9ec692f01c7.htm" />
+  <HelpKINode Title="Game.CurrentPlayer property" Url="html/9ee3c2ba-1f96-d94c-a982-6a22506e3b8c.htm" />
+  <HelpKINode Title="Game.Delegate property" Url="html/bb9253e9-6828-56b1-ad73-2a88a934ee57.htm" />
+  <HelpKINode Title="Game.Game constructor" Url="html/588a1098-3457-e03b-f1e1-b1926fb6b0b6.htm" />
+  <HelpKINode Title="Game.MoveDown method" Url="html/045a3603-f89f-2250-e39a-841369c31edf.htm" />
+  <HelpKINode Title="Game.MoveLeft method" Url="html/7e85d6fe-36c2-e7a8-a63c-a11d4f6a3f39.htm" />
+  <HelpKINode Title="Game.MoveRight method" Url="html/9e2bf97c-089f-acbf-f52b-3cee36041bd0.htm" />
+  <HelpKINode Title="Game.MoveUp method" Url="html/bbcf17a0-3b9d-adb1-63ef-9316bb20c8da.htm" />
+  <HelpKINode Title="Game.PlayerCountToTurnsUntilNewSquare field" Url="html/54b6c387-f923-4cce-294a-fda12a345b6f.htm" />
+  <HelpKINode Title="Game.Players property" Url="html/2b973920-b947-9942-0175-3ff3df1c3999.htm" />
+  <HelpKINode Title="Game.Spawnpoints property" Url="html/eb71c8cb-df2c-84c0-ac25-1f1abd4715ef.htm" />
+  <HelpKINode Title="Game.ToString method" Url="html/173757dd-be33-daa6-8e66-0255cec627a1.htm" />
+  <HelpKINode Title="GameAI class">
+    <HelpKINode Title="GameAI Class" Url="html/9ecd53a9-a3e7-d624-58fe-93995c9f2e88.htm" />
+    <HelpKINode Title="about GameAI class" Url="html/9ecd53a9-a3e7-d624-58fe-93995c9f2e88.htm" />
+    <HelpKINode Title="constructor" Url="html/b94a1db2-8eb8-8023-1a39-5599b9d22738.htm" />
+    <HelpKINode Title="methods" Url="html/49e3d6c0-1c67-def9-a1f9-e20dd8c733ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GameAI.EvaluateHeuristics method" Url="html/1bff963f-4051-3b0f-2c70-e7dc2749c9b7.htm" />
+  <HelpKINode Title="GameAI.GameAI constructor" Url="html/b94a1db2-8eb8-8023-1a39-5599b9d22738.htm" />
+  <HelpKINode Title="GameAI.NextMove method" Url="html/212534a2-dd4e-12d9-fa79-0d462dd76b84.htm" />
+  <HelpKINode Title="GameDelegate delegate" Url="html/89197320-220c-174f-a242-6c979c343218.htm" />
+  <HelpKINode Title="GameExtensions class">
+    <HelpKINode Title="GameExtensions Class" Url="html/612e58ec-0232-cdd8-8a34-2168da10e6d8.htm" />
+    <HelpKINode Title="about GameExtensions class" Url="html/612e58ec-0232-cdd8-8a34-2168da10e6d8.htm" />
+    <HelpKINode Title="methods" Url="html/54603a1a-ee64-f770-a298-36e4389421b0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GameExtensions.GetPlayer method" Url="html/05fa9390-dca8-c4a0-bf6b-f08dfd1d29a7.htm" />
+  <HelpKINode Title="GameExtensions.Move method" Url="html/6784694a-9a5e-4118-3fc0-6e36c6f1a555.htm" />
+  <HelpKINode Title="GameExtensions.OpponentsOf method" Url="html/eead6637-4fc7-1176-bb04-24b22e1d620c.htm" />
+  <HelpKINode Title="GetHashCode method" Url="html/a892ae95-6b39-75ac-2ae2-c052931d58be.htm" />
+  <HelpKINode Title="GetPlayer method" Url="html/05fa9390-dca8-c4a0-bf6b-f08dfd1d29a7.htm" />
+  <HelpKINode Title="Grey enumeration member" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="ItemAt(Of T) method" Url="html/ca947f5d-0bd6-6de9-4f27-2fcc197e79f6.htm" />
+  <HelpKINode Title="ItemAt&lt;T&gt; method" Url="html/ca947f5d-0bd6-6de9-4f27-2fcc197e79f6.htm" />
+  <HelpKINode Title="Left enumeration member" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="Left property" Url="html/47abc100-8745-567e-f223-47cf04e3cd35.htm" />
+  <HelpKINode Title="Lives property" Url="html/c23cdc45-2b8f-c5e1-ceaf-fc781afc360b.htm" />
+  <HelpKINode Title="Map structure">
+    <HelpKINode Title="Map Structure" Url="html/adde76c8-ee1e-ea0c-968f-378f56585dce.htm" />
+    <HelpKINode Title="about Map structure" Url="html/adde76c8-ee1e-ea0c-968f-378f56585dce.htm" />
+    <HelpKINode Title="constructor" Url="html/5f02f01e-350b-f1b7-ae97-d55be051e07f.htm" />
+    <HelpKINode Title="fields" Url="html/339728cb-9d1e-d633-b586-a73737b29c3b.htm" />
+    <HelpKINode Title="methods" Url="html/950569de-1135-af01-af51-1a3473980420.htm" />
+    <HelpKINode Title="properties" Url="html/8d1510ef-eb01-4214-bc97-da2495cd481e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Map.Board property" Url="html/be5bad2d-ade7-d7af-ae5f-a2496ef90940.htm" />
+  <HelpKINode Title="Map.Map constructor" Url="html/5f02f01e-350b-f1b7-ae97-d55be051e07f.htm" />
+  <HelpKINode Title="Map.Spawnpoints property" Url="html/06e9ee38-b80b-66c6-4753-5fe713888087.htm" />
+  <HelpKINode Title="Map.Standard field" Url="html/ef7353b4-e23a-129c-3e9e-391eecf0beac.htm" />
+  <HelpKINode Title="Move method" Url="html/6784694a-9a5e-4118-3fc0-6e36c6f1a555.htm" />
+  <HelpKINode Title="MoveDown method" Url="html/045a3603-f89f-2250-e39a-841369c31edf.htm" />
+  <HelpKINode Title="MoveLeft method" Url="html/7e85d6fe-36c2-e7a8-a63c-a11d4f6a3f39.htm" />
+  <HelpKINode Title="MoveRight method" Url="html/9e2bf97c-089f-acbf-f52b-3cee36041bd0.htm" />
+  <HelpKINode Title="MoveUp method" Url="html/bbcf17a0-3b9d-adb1-63ef-9316bb20c8da.htm" />
+  <HelpKINode Title="NextMove method" Url="html/212534a2-dd4e-12d9-fa79-0d462dd76b84.htm" />
+  <HelpKINode Title="OpponentsOf method" Url="html/eead6637-4fc7-1176-bb04-24b22e1d620c.htm" />
+  <HelpKINode Title="Player class">
+    <HelpKINode Title="Player Class" Url="html/5470170c-5194-8372-5a37-e68df9547cab.htm" />
+    <HelpKINode Title="about Player class" Url="html/5470170c-5194-8372-5a37-e68df9547cab.htm" />
+    <HelpKINode Title="constructor" Url="html/0ccf8a5e-c2ce-74ef-3d7d-e3802ad3f256.htm" />
+    <HelpKINode Title="methods" Url="html/824c9ee6-3fbd-b881-1f53-1663198d932c.htm" />
+    <HelpKINode Title="properties" Url="html/90a93bbe-33f8-f9ff-b260-f52617ddf4cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Player.Color property" Url="html/932489fd-e70b-bb1d-208c-53977f76a80a.htm" />
+  <HelpKINode Title="Player.CreateCopy method" Url="html/a994ccc4-f224-85cc-97f0-a00b6be26332.htm" />
+  <HelpKINode Title="Player.Lives property" Url="html/c23cdc45-2b8f-c5e1-ceaf-fc781afc360b.htm" />
+  <HelpKINode Title="Player.Player constructor" Url="html/0ccf8a5e-c2ce-74ef-3d7d-e3802ad3f256.htm" />
+  <HelpKINode Title="Player.TurnsUntilNewSquare property" Url="html/8d68c626-26ce-0c33-ba96-249a65ef51ac.htm" />
+  <HelpKINode Title="PlayerCountToTurnsUntilNewSquare field" Url="html/54b6c387-f923-4cce-294a-fda12a345b6f.htm" />
+  <HelpKINode Title="Players property" Url="html/2b973920-b947-9942-0175-3ff3df1c3999.htm" />
+  <HelpKINode Title="Position structure">
+    <HelpKINode Title="Position Structure" Url="html/500bc509-f732-ed6d-044a-781f0f4f2944.htm" />
+    <HelpKINode Title="about Position structure" Url="html/500bc509-f732-ed6d-044a-781f0f4f2944.htm" />
+    <HelpKINode Title="constructor" Url="html/3b6391c2-a3c8-3937-ddb4-1a21f277abaa.htm" />
+    <HelpKINode Title="methods" Url="html/935bf5e8-26bf-29a9-f521-524daa72a5df.htm" />
+    <HelpKINode Title="properties" Url="html/1239f72c-32ef-4ab4-e4ce-5c67572c8adb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Position.Above property" Url="html/39afddfa-a602-2fd0-ba49-bd220b9e253f.htm" />
+  <HelpKINode Title="Position.Below property" Url="html/c9d23cb3-5bfb-29e6-7a2d-edfde162dbfc.htm" />
+  <HelpKINode Title="Position.GetHashCode method" Url="html/a892ae95-6b39-75ac-2ae2-c052931d58be.htm" />
+  <HelpKINode Title="Position.Left property" Url="html/47abc100-8745-567e-f223-47cf04e3cd35.htm" />
+  <HelpKINode Title="Position.Position constructor" Url="html/3b6391c2-a3c8-3937-ddb4-1a21f277abaa.htm" />
+  <HelpKINode Title="Position.Right property" Url="html/8ccf1cdb-1ef9-08dc-e60b-3651b107c4a1.htm" />
+  <HelpKINode Title="Position.ToString method" Url="html/43cc8104-0cbd-5f61-0762-3106bcfe64dc.htm" />
+  <HelpKINode Title="Position.X property" Url="html/98e655ea-3a8e-3c2a-f325-db22e4a0bdf1.htm" />
+  <HelpKINode Title="Position.Y property" Url="html/a1328eaa-01ab-f0c7-e47d-02f2cf30895a.htm" />
+  <HelpKINode Title="PositionsOf method" Url="html/dba3c190-c3e3-8813-1194-b3de045ddcb6.htm" />
+  <HelpKINode Title="PushySquares namespace" Url="html/25eafd75-70de-bbf3-dd87-16d3b90b2f60.htm" />
+  <HelpKINode Title="PushySquares.ArrayExtensions class" Url="html/a2ea7eff-4e72-d82d-2fe7-cb2c0d3b1fc6.htm" />
+  <HelpKINode Title="PushySquares.Color enumeration" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+  <HelpKINode Title="PushySquares.Direction enumeration" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="PushySquares.Game class" Url="html/66965d14-a87d-e06f-1726-bfc5038d91a7.htm" />
+  <HelpKINode Title="PushySquares.GameAI class" Url="html/9ecd53a9-a3e7-d624-58fe-93995c9f2e88.htm" />
+  <HelpKINode Title="PushySquares.GameDelegate delegate" Url="html/89197320-220c-174f-a242-6c979c343218.htm" />
+  <HelpKINode Title="PushySquares.GameExtensions class" Url="html/612e58ec-0232-cdd8-8a34-2168da10e6d8.htm" />
+  <HelpKINode Title="PushySquares.Map structure" Url="html/adde76c8-ee1e-ea0c-968f-378f56585dce.htm" />
+  <HelpKINode Title="PushySquares.Player class" Url="html/5470170c-5194-8372-5a37-e68df9547cab.htm" />
+  <HelpKINode Title="PushySquares.Position structure" Url="html/500bc509-f732-ed6d-044a-781f0f4f2944.htm" />
+  <HelpKINode Title="PushySquares.Tile enumeration" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="PushySquares.TileExtensions class" Url="html/72867e8a-ed25-7e36-6a20-72d3d93e5c01.htm" />
+  <HelpKINode Title="Right enumeration member" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="Right property" Url="html/8ccf1cdb-1ef9-08dc-e60b-3651b107c4a1.htm" />
+  <HelpKINode Title="Spawnpoints property">
+    <HelpKINode Title="Game.Spawnpoints Property " Url="html/eb71c8cb-df2c-84c0-ac25-1f1abd4715ef.htm" />
+    <HelpKINode Title="Map.Spawnpoints Property " Url="html/06e9ee38-b80b-66c6-4753-5fe713888087.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SquareColor1 enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="SquareColor2 enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="SquareColor3 enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="SquareColor4 enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="SquareGrey enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="Standard field" Url="html/ef7353b4-e23a-129c-3e9e-391eecf0beac.htm" />
+  <HelpKINode Title="Tile enumeration" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="TileExtensions class">
+    <HelpKINode Title="TileExtensions Class" Url="html/72867e8a-ed25-7e36-6a20-72d3d93e5c01.htm" />
+    <HelpKINode Title="about TileExtensions class" Url="html/72867e8a-ed25-7e36-6a20-72d3d93e5c01.htm" />
+    <HelpKINode Title="methods" Url="html/4df85796-601f-07be-b34c-56139b30521c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TileExtensions.FromColor method" Url="html/f086cf40-a9dd-8976-58b0-2cd2c976c6d6.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Game.ToString Method " Url="html/173757dd-be33-daa6-8e66-0255cec627a1.htm" />
+    <HelpKINode Title="Position.ToString Method " Url="html/43cc8104-0cbd-5f61-0762-3106bcfe64dc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TurnsUntilNewSquare property" Url="html/8d68c626-26ce-0c33-ba96-249a65ef51ac.htm" />
+  <HelpKINode Title="Up enumeration member" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+  <HelpKINode Title="Void enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="Wall enumeration member" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+  <HelpKINode Title="X property" Url="html/98e655ea-3a8e-3c2a-f325-db22e4a0bdf1.htm" />
+  <HelpKINode Title="Y property" Url="html/a1328eaa-01ab-f0c7-e47d-02f2cf30895a.htm" />
+</HelpKI>

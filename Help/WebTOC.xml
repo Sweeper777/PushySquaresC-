@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="3cc1b4b8-33a9-45e9-845e-b39310c837d7" Title="PushySquares" Url="html/25eafd75-70de-bbf3-dd87-16d3b90b2f60.htm">
+    <HelpTOCNode Id="03b1a4ee-1b86-402f-8c4d-cbfb467460aa" Title="ArrayExtensions Class" Url="html/a2ea7eff-4e72-d82d-2fe7-cb2c0d3b1fc6.htm">
+      <HelpTOCNode Id="06a349c0-7c81-424c-bcbf-48d862b61cf4" Title="ArrayExtensions Methods" Url="html/f2d6a32a-2086-62e4-9781-017511ea10b4.htm">
+        <HelpTOCNode Title="ItemAt(T) Method " Url="html/ca947f5d-0bd6-6de9-4f27-2fcc197e79f6.htm" />
+        <HelpTOCNode Id="6dbe4c05-5565-4698-8cba-730f06e65629" Title="PositionsOf Method " Url="html/dba3c190-c3e3-8813-1194-b3de045ddcb6.htm">
+          <HelpTOCNode Title="PositionsOf Method (Tile[,], Color)" Url="html/da26a5ab-9dfb-9eb2-9cec-f7444c537b39.htm" />
+          <HelpTOCNode Title="PositionsOf Method (Tile[,], Tile)" Url="html/57d2d136-397d-64b3-2448-ca7cdb89ec92.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Color Enumeration" Url="html/63a90283-d1cd-c424-a96e-ea537e223a8d.htm" />
+    <HelpTOCNode Title="Direction Enumeration" Url="html/0d5afb6b-b07b-4c85-2cbf-08875ba6829c.htm" />
+    <HelpTOCNode Id="20521bcb-ea40-45be-a2ab-5127ef7d0e1a" Title="Game Class" Url="html/66965d14-a87d-e06f-1726-bfc5038d91a7.htm">
+      <HelpTOCNode Title="Game Constructor " Url="html/588a1098-3457-e03b-f1e1-b1926fb6b0b6.htm" />
+      <HelpTOCNode Id="9ab5c44e-a7e6-4686-a2fe-96a459d2b10f" Title="Game Properties" Url="html/b49e3913-8ac9-480c-a57a-f4f0ffdc8b90.htm">
+        <HelpTOCNode Title="Board Property " Url="html/d931be10-9e19-1436-db82-c1980fc77af9.htm" />
+        <HelpTOCNode Title="CurrentPlayer Property " Url="html/9ee3c2ba-1f96-d94c-a982-6a22506e3b8c.htm" />
+        <HelpTOCNode Title="Delegate Property " Url="html/bb9253e9-6828-56b1-ad73-2a88a934ee57.htm" />
+        <HelpTOCNode Title="Players Property " Url="html/2b973920-b947-9942-0175-3ff3df1c3999.htm" />
+        <HelpTOCNode Title="Spawnpoints Property " Url="html/eb71c8cb-df2c-84c0-ac25-1f1abd4715ef.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4df4f998-9aa4-4ca6-a3ea-5e693d9b8292" Title="Game Methods" Url="html/dab8a9a3-1a5c-aa69-b0c7-3ca0400a9b54.htm">
+        <HelpTOCNode Title="CreateCopy Method " Url="html/f9ded402-4843-ed15-6676-e9ec692f01c7.htm" />
+        <HelpTOCNode Title="MoveDown Method " Url="html/045a3603-f89f-2250-e39a-841369c31edf.htm" />
+        <HelpTOCNode Title="MoveLeft Method " Url="html/7e85d6fe-36c2-e7a8-a63c-a11d4f6a3f39.htm" />
+        <HelpTOCNode Title="MoveRight Method " Url="html/9e2bf97c-089f-acbf-f52b-3cee36041bd0.htm" />
+        <HelpTOCNode Title="MoveUp Method " Url="html/bbcf17a0-3b9d-adb1-63ef-9316bb20c8da.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/173757dd-be33-daa6-8e66-0255cec627a1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e893e996-2b4c-40f8-94c1-62359a392ff4" Title="Game Fields" Url="html/3453f4ea-ee8b-f421-4e7e-3a526184250f.htm">
+        <HelpTOCNode Title="PlayerCountToTurnsUntilNewSquare Field" Url="html/54b6c387-f923-4cce-294a-fda12a345b6f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9453bf1a-e39e-4ae4-b864-4b5777762d75" Title="GameAI Class" Url="html/9ecd53a9-a3e7-d624-58fe-93995c9f2e88.htm">
+      <HelpTOCNode Title="GameAI Constructor " Url="html/b94a1db2-8eb8-8023-1a39-5599b9d22738.htm" />
+      <HelpTOCNode Id="bceb7cae-7a0a-4f5a-8c47-8263e1c36d69" Title="GameAI Methods" Url="html/49e3d6c0-1c67-def9-a1f9-e20dd8c733ca.htm">
+        <HelpTOCNode Title="EvaluateHeuristics Method " Url="html/1bff963f-4051-3b0f-2c70-e7dc2749c9b7.htm" />
+        <HelpTOCNode Title="NextMove Method " Url="html/212534a2-dd4e-12d9-fa79-0d462dd76b84.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="GameDelegate Delegate" Url="html/89197320-220c-174f-a242-6c979c343218.htm" />
+    <HelpTOCNode Id="718a7084-6bd9-4f78-9a23-48252e482138" Title="GameExtensions Class" Url="html/612e58ec-0232-cdd8-8a34-2168da10e6d8.htm">
+      <HelpTOCNode Id="c902b6c4-93e2-40e4-af94-174a16eddfed" Title="GameExtensions Methods" Url="html/54603a1a-ee64-f770-a298-36e4389421b0.htm">
+        <HelpTOCNode Title="GetPlayer Method " Url="html/05fa9390-dca8-c4a0-bf6b-f08dfd1d29a7.htm" />
+        <HelpTOCNode Title="Move Method " Url="html/6784694a-9a5e-4118-3fc0-6e36c6f1a555.htm" />
+        <HelpTOCNode Title="OpponentsOf Method " Url="html/eead6637-4fc7-1176-bb04-24b22e1d620c.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="80de94fb-e6a8-45f2-8aa6-02e110e04f8b" Title="Map Structure" Url="html/adde76c8-ee1e-ea0c-968f-378f56585dce.htm">
+      <HelpTOCNode Id="6ef6a5a3-a82d-4fc2-8992-04b5abfe75a7" Title="Map Constructor " Url="html/5f02f01e-350b-f1b7-ae97-d55be051e07f.htm">
+        <HelpTOCNode Title="Map Constructor (String)" Url="html/3ff5cf2f-e09a-0e5d-a8fd-cc38188a62d8.htm" />
+        <HelpTOCNode Title="Map Constructor (Tile[,], Dictionary(Color, Position))" Url="html/00756f70-385b-e1dd-db3e-c4e15062a9a7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d8c2b31d-6a2b-4756-9a4c-e8c2ae05ccbb" Title="Map Properties" Url="html/8d1510ef-eb01-4214-bc97-da2495cd481e.htm">
+        <HelpTOCNode Title="Board Property " Url="html/be5bad2d-ade7-d7af-ae5f-a2496ef90940.htm" />
+        <HelpTOCNode Title="Spawnpoints Property " Url="html/06e9ee38-b80b-66c6-4753-5fe713888087.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Map Methods" Url="html/950569de-1135-af01-af51-1a3473980420.htm" />
+      <HelpTOCNode Id="b23d845d-1a38-4df4-939a-bcb18c9f8f93" Title="Map Fields" Url="html/339728cb-9d1e-d633-b586-a73737b29c3b.htm">
+        <HelpTOCNode Title="Standard Field" Url="html/ef7353b4-e23a-129c-3e9e-391eecf0beac.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="be46c398-87e5-406c-acd3-1bb3a4951da3" Title="Player Class" Url="html/5470170c-5194-8372-5a37-e68df9547cab.htm">
+      <HelpTOCNode Title="Player Constructor " Url="html/0ccf8a5e-c2ce-74ef-3d7d-e3802ad3f256.htm" />
+      <HelpTOCNode Id="dcb25b97-dce5-46df-9624-cc768f54a91c" Title="Player Properties" Url="html/90a93bbe-33f8-f9ff-b260-f52617ddf4cb.htm">
+        <HelpTOCNode Title="Color Property " Url="html/932489fd-e70b-bb1d-208c-53977f76a80a.htm" />
+        <HelpTOCNode Title="Lives Property " Url="html/c23cdc45-2b8f-c5e1-ceaf-fc781afc360b.htm" />
+        <HelpTOCNode Title="TurnsUntilNewSquare Property " Url="html/8d68c626-26ce-0c33-ba96-249a65ef51ac.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0948ff72-2ebd-441b-bbca-2e00a7a14fd5" Title="Player Methods" Url="html/824c9ee6-3fbd-b881-1f53-1663198d932c.htm">
+        <HelpTOCNode Title="CreateCopy Method " Url="html/a994ccc4-f224-85cc-97f0-a00b6be26332.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1f2edb53-e76d-4e3d-bd90-09a954fdba3a" Title="Position Structure" Url="html/500bc509-f732-ed6d-044a-781f0f4f2944.htm">
+      <HelpTOCNode Title="Position Constructor " Url="html/3b6391c2-a3c8-3937-ddb4-1a21f277abaa.htm" />
+      <HelpTOCNode Id="ce74f3de-79f9-4ba7-8858-33f13347ab89" Title="Position Properties" Url="html/1239f72c-32ef-4ab4-e4ce-5c67572c8adb.htm">
+        <HelpTOCNode Title="Above Property " Url="html/39afddfa-a602-2fd0-ba49-bd220b9e253f.htm" />
+        <HelpTOCNode Title="Below Property " Url="html/c9d23cb3-5bfb-29e6-7a2d-edfde162dbfc.htm" />
+        <HelpTOCNode Title="Left Property " Url="html/47abc100-8745-567e-f223-47cf04e3cd35.htm" />
+        <HelpTOCNode Title="Right Property " Url="html/8ccf1cdb-1ef9-08dc-e60b-3651b107c4a1.htm" />
+        <HelpTOCNode Title="X Property " Url="html/98e655ea-3a8e-3c2a-f325-db22e4a0bdf1.htm" />
+        <HelpTOCNode Title="Y Property " Url="html/a1328eaa-01ab-f0c7-e47d-02f2cf30895a.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="59fc861e-541f-4ddc-9655-0ca2d1b1bfed" Title="Position Methods" Url="html/935bf5e8-26bf-29a9-f521-524daa72a5df.htm">
+        <HelpTOCNode Title="GetHashCode Method " Url="html/a892ae95-6b39-75ac-2ae2-c052931d58be.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/43cc8104-0cbd-5f61-0762-3106bcfe64dc.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Tile Enumeration" Url="html/4d16b6f7-25c9-9d9f-622b-f94fbdae77bd.htm" />
+    <HelpTOCNode Id="116ae7d6-1fb6-4ec1-a55d-4ec2a883f0bd" Title="TileExtensions Class" Url="html/72867e8a-ed25-7e36-6a20-72d3d93e5c01.htm">
+      <HelpTOCNode Id="ef39b6b3-8e9b-4fb0-843f-91c0076960a6" Title="TileExtensions Methods" Url="html/4df85796-601f-07be-b34c-56139b30521c.htm">
+        <HelpTOCNode Title="FromColor Method " Url="html/f086cf40-a9dd-8976-58b0-2cd2c976c6d6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
