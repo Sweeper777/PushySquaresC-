@@ -87,6 +87,9 @@ namespace PushySquares {
         SquareGrey
 	}
 
+    /// <summary>
+    /// A class containing extension methods for <see cref="T:PushySquares.Tile"/>.
+    /// </summary>
 	public static class TileExtensions {
         /// <summary>
         /// Gets the square <see cref="T:PushySquares.Tile"/> that is of a given color.
