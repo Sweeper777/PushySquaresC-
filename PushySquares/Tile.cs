@@ -53,7 +53,38 @@ namespace PushySquares {
     /// Represents a part of the board. The board is a matrix of tiles.
     /// </summary>
 	public enum Tile {
-		Empty, Void, Wall, SquareColor1, SquareColor2, SquareColor3, SquareColor4, SquareGrey
+        /// <summary>
+        /// A tile on the board with no squares on it.
+        /// </summary>
+		Empty, 
+        /// <summary>
+        /// An empty space on the board where squares can fall off.
+        /// </summary>
+        Void,
+        /// <summary>
+        /// A tile that blocks the squares' movements
+        /// </summary>
+        Wall, 
+        /// <summary>
+        /// A tile with a square whose color is <see cref="E:PushySquares.Color.Color1"/> on it.
+        /// </summary>
+        SquareColor1, 
+        /// <summary>
+        /// A tile with a square whose color is <see cref="E:PushySquares.Color.Color2"/> on it.
+        /// </summary>
+        SquareColor2, 
+        /// <summary>
+        /// A tile with a square whose color is <see cref="E:PushySquares.Color.Color3"/> on it.
+        /// </summary>
+        SquareColor3, 
+        /// <summary>
+        /// A tile with a square whose color is <see cref="E:PushySquares.Color.Color4"/> on it.
+        /// </summary>
+        SquareColor4, 
+        /// <summary>
+        /// A tile with a square whose color is <see cref="E:PushySquares.Color.Grey"/> on it.
+        /// </summary>
+        SquareGrey
 	}
 
 	public static class TileExtensions {
