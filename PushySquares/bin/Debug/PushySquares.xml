@@ -9,14 +9,104 @@
             Represents the color of a particular square on the board.
             </summary>
         </member>
+        <member name="F:PushySquares.Color.Color1">
+            <summary>
+            The color of the player who goes first.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Color.Color2">
+            <summary>
+            The color of the player who goes second.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Color.Color3">
+            <summary>
+            The color of the player who goes third.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Color.Color4">
+            <summary>
+            The color of the player who goes fourth.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Color.Grey">
+            <summary>
+            The color of the players who died.
+            </summary>
+        </member>
         <member name="T:PushySquares.Direction">
             <summary>
             Represents the direction of a move that a player makes.
             </summary>
         </member>
+        <member name="F:PushySquares.Direction.Up">
+            <summary>
+            Move upwards.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Direction.Down">
+            <summary>
+            Move downwards.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Direction.Left">
+            <summary>
+            Move to the left.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Direction.Right">
+            <summary>
+            Move to the right.
+            </summary>
+        </member>
         <member name="T:PushySquares.Tile">
             <summary>
             Represents a part of the board. The board is a matrix of tiles.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.Empty">
+            <summary>
+            A tile on the board with no squares on it.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.Void">
+            <summary>
+            An empty space on the board where squares can fall off.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.Wall">
+            <summary>
+            A tile that blocks the squares' movements
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.SquareColor1">
+            <summary>
+            A tile with a square whose color is <see cref="E:PushySquares.Color.Color1"/> on it.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.SquareColor2">
+            <summary>
+            A tile with a square whose color is <see cref="E:PushySquares.Color.Color2"/> on it.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.SquareColor3">
+            <summary>
+            A tile with a square whose color is <see cref="E:PushySquares.Color.Color3"/> on it.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.SquareColor4">
+            <summary>
+            A tile with a square whose color is <see cref="E:PushySquares.Color.Color4"/> on it.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Tile.SquareGrey">
+            <summary>
+            A tile with a square whose color is <see cref="E:PushySquares.Color.Grey"/> on it.
+            </summary>
+        </member>
+        <member name="T:PushySquares.TileExtensions">
+            <summary>
+            A class containing extension methods for <see cref="T:PushySquares.Tile"/>.
             </summary>
         </member>
         <member name="M:PushySquares.TileExtensions.FromColor(PushySquares.Color)">
@@ -91,6 +181,11 @@
             </summary>
             <value>The <see cref="T:PushySquares.Position"/> to the right of this.</value>
         </member>
+        <member name="T:PushySquares.ArrayExtensions">
+            <summary>
+            A class containing extension methods for a matrix of <see cref="T:PushySquares.Tile"/>.
+            </summary>
+        </member>
         <member name="M:PushySquares.ArrayExtensions.ItemAt``1(``0[0:,0:],PushySquares.Position)">
             <summary>
             Returns a reference of the element in the 2D array that is at a specific 
@@ -120,6 +215,44 @@
             the specified <see cref="T:PushySquares.Color"/>.</returns>
             <param name="array">The 2D array.</param>
             <param name="color">The color to look for.</param>
+        </member>
+        <member name="T:PushySquares.Player">
+            <summary>
+            Represents a player in a game of Pushy Squares.
+            </summary>
+        </member>
+        <member name="P:PushySquares.Player.TurnsUntilNewSquare">
+            <summary>
+            Gets or sets the number of turns until a new square spawns.
+            </summary>
+            <value>The number of turns until a new square spawns.</value>
+        </member>
+        <member name="P:PushySquares.Player.Lives">
+            <summary>
+            Gets or sets the number of lives this player has.
+            </summary>
+            <value>The number of lives this player has.</value>
+        </member>
+        <member name="P:PushySquares.Player.Color">
+            <summary>
+            Gets the color of this player.
+            </summary>
+            <value>The color of this player.</value>
+        </member>
+        <member name="M:PushySquares.Player.#ctor(System.Int32,System.Int32,PushySquares.Color)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.Player"/> class with the
+            number of turns until a new square spawns, number of lives, and the player's color.
+            </summary>
+            <param name="turnsUntilNewSquare">Number of turns until a new square spawns.</param>
+            <param name="lives">Number of lives.</param>
+            <param name="color">Color.</param>
+        </member>
+        <member name="M:PushySquares.Player.CreateCopy">
+            <summary>
+            Create a deep copy of this player
+            </summary>
+            <returns>A deep copy of this player with everything being the same.</returns>
         </member>
         <member name="T:PushySquares.Map">
             <summary>
@@ -193,6 +326,166 @@
                 </item>
             </list>
             </remarks>
+        </member>
+        <member name="T:PushySquares.Game">
+            <summary>
+            Represents a game of PushySquares.
+            </summary>
+        </member>
+        <member name="F:PushySquares.Game.PlayerCountToTurnsUntilNewSquare">
+            <summary>
+            A dictionary that maps the number of players to how many turns should a new square spawn.
+            </summary>
+        </member>
+        <member name="P:PushySquares.Game.Board">
+            <summary>
+            Gets or sets the game board.
+            </summary>
+            <value>The game board.</value>
+        </member>
+        <member name="P:PushySquares.Game.Spawnpoints">
+            <summary>
+            Gets or sets the spawnpoints for each color.
+            </summary>
+            <value>The spawnpoints.</value>
+        </member>
+        <member name="P:PushySquares.Game.Players">
+            <summary>
+            Gets or sets the players in this game.
+            </summary>
+            <value>The players.</value>
+        </member>
+        <member name="P:PushySquares.Game.CurrentPlayer">
+            <summary>
+            Gets the current player. The current player is the player that will make a move in the
+            current turn.
+            </summary>
+            <value>The current player.</value>
+        </member>
+        <member name="P:PushySquares.Game.Delegate">
+            <summary>
+            Gets or sets the delegate. The delegate will be invoked when a player makes a move
+            </summary>
+            <value>The delegate.</value>
+        </member>
+        <member name="M:PushySquares.Game.#ctor(PushySquares.Map,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.Game"/> class with the
+            specified map, number of players, and lives for each player.
+            </summary>
+            <param name="map">The <see cref="T:PushySquares.Map"/> to be used in this game.</param>
+            <param name="playerCount">Number of players.</param>
+            <param name="lives">Number of lives for each player.</param>
+        </member>
+        <member name="M:PushySquares.Game.MoveDown">
+            <summary>
+            Attempts to move all of the current player's squares downwards.
+            </summary>
+        </member>
+        <member name="M:PushySquares.Game.MoveUp">
+            <summary>
+            Attempts to move all of the current player's squares upwards.
+            </summary>
+        </member>
+        <member name="M:PushySquares.Game.MoveRight">
+            <summary>
+            Attempts to move all of the current player's squares to the right.
+            </summary>
+        </member>
+        <member name="M:PushySquares.Game.MoveLeft">
+            <summary>
+            Attempts to move all of the current player's squares to the left.
+            </summary>
+        </member>
+        <member name="M:PushySquares.Game.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:PushySquares.Game"/>.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that shows the current player's 
+            <see cref="P:PushySquares.Player.TurnsUntilNewSquare"/>, <see cref="P:PushySquares.Player.Lives"/> of all the players,
+            and the current game board.</returns>
+        </member>
+        <member name="M:PushySquares.Game.CreateCopy">
+            <summary>
+            Creates a deep copy of the current game, except for the <see cref="P:PushySquares.Game.Delegate"/> property.
+            </summary>
+            <returns>A deep copy of this game.</returns>
+        </member>
+        <member name="T:PushySquares.GameDelegate">
+            <summary>
+            Represents a method that will be called when a player makes a move.
+            </summary>
+        </member>
+        <member name="T:PushySquares.GameExtensions">
+            <summary>
+            A class containing extension methods for <see cref="T:PushySquares.Game"/>.
+            </summary>
+        </member>
+        <member name="M:PushySquares.GameExtensions.GetPlayer(PushySquares.Game,PushySquares.Color)">
+            <summary>
+            Gets the <see cref="T:PushySquares.Player"/> object whose <see cref="P:PushySquares.Player.Color"/> property is the specifed color.
+            </summary>
+            <returns>The <see cref="T:PushySquares.Player"/> object whose <see cref="P:PushySquares.Player.Color"/> property is the specifed color.</returns>
+            <param name="game">The game that the player is in.</param>
+            <param name="color">The color of the player to be returned.</param>
+        </member>
+        <member name="M:PushySquares.GameExtensions.OpponentsOf(PushySquares.Game,PushySquares.Color)">
+            <summary>
+            Gets the opponents for the player of the specified color.
+            </summary>
+            <returns>The opponents for the player of the specified color.</returns>
+            <param name="game">The game that the player is in.</param>
+            <param name="color">The specified color.</param>
+        </member>
+        <member name="M:PushySquares.GameExtensions.Move(PushySquares.Game,PushySquares.Direction)">
+            <summary>
+            Attempts to move all of the current player's squares in a specific direction. This is
+            equivalent to calling the appropriate <see cref="M:PushySquares.Game.MoveUp"/>, 
+            <see cref="M:PushySquares.Game.MoveDown"/>, <see cref="M:PushySquares.Game.MoveLeft"/> and <see cref="M:PushySquares.Game.MoveRight"/> methods.
+            </summary>
+            <param name="game">The game.</param>
+            <param name="direction">The direction in which the player's squares should be moved.</param>
+        </member>
+        <member name="T:PushySquares.GameAI">
+            <summary>
+            Represents an AI which will decide the best move in a given game if it were a given player in
+            that game.
+            </summary>
+        </member>
+        <member name="M:PushySquares.GameAI.#ctor(PushySquares.Game,PushySquares.Color,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PushySquares.GameAI"/> class, with the
+            specified <see cref="T:PushySquares.Game"/> object, the color of the player that the AI is going to
+            represent, and the weights of different features of the game.
+            </summary>
+            <param name="game">The given <see cref="T:PushySquares.Game"/> object.</param>
+            <param name="myColor">The color of the player that the AI is going to be.</param>
+            <param name="wSelfLife">Weight of <code>selfLife</code>.</param>
+            <param name="wDiffLives">Weight of <code>diffLives</code>.</param>
+            <param name="wSquareThreshold">The square threshold.</param>
+            <param name="wSelfSpreadBelowThreshold">Weight of <code>selfSpread</code> below the square
+             threshold.</param>
+            <param name="wSelfSpreadAboveThreshold">Weight of <code>selfSpread</code> below the square
+            threshold.</param>
+            <param name="wOpponentSpread">Weight of <code>opponentSpread</code>.</param>
+            <param name="wSelfInDanger">Weight of <code>selfInDanger</code>.</param>
+            <param name="wOpponentInDangerBelowThreshold">Weight of <code>opponentInDanger</code>
+            below the square threshold.</param>
+            <param name="wOpponentInDangerAboveThreshold">Weight of <code>opponentInDanger</code>
+            above the square threshold.</param>
+        </member>
+        <member name="M:PushySquares.GameAI.EvaluateHeuristics">
+            <summary>
+            Evaluates the heuristics of the current game state.
+            </summary>
+            <returns>A value representing wehther the current game state advantageous to the AI player.
+            The larger the value, the more advantageous to the AI player.</returns>
+        </member>
+        <member name="M:PushySquares.GameAI.NextMove">
+            <summary>
+            Gets the best next move.
+            </summary>
+            <returns>A <see cref="T:PushySquares.Direction"/> representing the best move that should be taken.</returns>
         </member>
     </members>
 </doc>
