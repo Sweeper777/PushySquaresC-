@@ -159,6 +159,10 @@ namespace PushySquares {
                 finalOpponentInDanger * (mySquares.Count < wSquareThreshold ? wOpponentInDangerBelowThreshold : wOpponentInDangerAboveThreshold);
         }
 
+        /// <summary>
+        /// Gets the best next move.
+        /// </summary>
+        /// <returns>A <see cref="Direction"/> representing the best move that should be taken.</returns>
         public Direction NextMove() {
             return Minimax(6, myColor).Item2;
         }
