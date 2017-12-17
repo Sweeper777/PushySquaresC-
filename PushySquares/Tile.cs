@@ -31,7 +31,22 @@ namespace PushySquares {
     /// Represents the direction of a move that a player makes.
     /// </summary>
 	public enum Direction {
-		Up, Down, Left, Right
+        /// <summary>
+        /// Move upwards.
+        /// </summary>
+		Up, 
+        /// <summary>
+        /// Move downwards.
+        /// </summary>
+        Down, 
+        /// <summary>
+        /// Move to the left.
+        /// </summary>
+        Left, 
+        /// <summary>
+        /// Move to the right.
+        /// </summary>
+        Right
 	}
 
     /// <summary>
