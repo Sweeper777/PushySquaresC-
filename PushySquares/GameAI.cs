@@ -71,6 +71,26 @@ namespace PushySquares {
 
         readonly Color myColor;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:PushySquares.GameAI"/> class, with the
+        /// specified <see cref="Game"/> object, the color of the player that the AI is going to
+        /// represent, and the weights of different features of the game.
+        /// </summary>
+        /// <param name="game">The given <see cref="Game"/> object.</param>
+        /// <param name="myColor">The color of the player that the AI is going to be.</param>
+        /// <param name="wSelfLife">Weight of <code>selfLife</code>.</param>
+        /// <param name="wDiffLives">Weight of <code>diffLives</code>.</param>
+        /// <param name="wSquareThreshold">The square threshold.</param>
+        /// <param name="wSelfSpreadBelowThreshold">Weight of <code>selfSpread</code> below the square
+        ///  threshold.</param>
+        /// <param name="wSelfSpreadAboveThreshold">Weight of <code>selfSpread</code> below the square
+        /// threshold.</param>
+        /// <param name="wOpponentSpread">Weight of <code>opponentSpread</code>.</param>
+        /// <param name="wSelfInDanger">Weight of <code>selfInDanger</code>.</param>
+        /// <param name="wOpponentInDangerBelowThreshold">Weight of <code>opponentInDanger</code>
+        /// below the square threshold.</param>
+        /// <param name="wOpponentInDangerAboveThreshold">Weight of <code>opponentInDanger</code>
+        /// above the square threshold.</param>
         public GameAI(Game game,
                       Color myColor,
                       int wSelfLife, 
