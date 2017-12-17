@@ -115,6 +115,11 @@ namespace PushySquares {
             this.wOpponentInDangerAboveThreshold = wOpponentInDangerAboveThreshold;
         }
 
+        /// <summary>
+        /// Evaluates the heuristics of the current game state.
+        /// </summary>
+        /// <returns>A value representing wehther the current game state advantageous to the AI player.
+        /// The larger the value, the more advantageous to the AI player.</returns>
         public int EvaluateHeuristics() {
             var livingPlayers = CurrentGame.Players.Where(x => x.Lives > 0).ToList();
             var me = CurrentGame.GetPlayer(myColor);
