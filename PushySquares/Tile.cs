@@ -5,7 +5,26 @@ namespace PushySquares {
     /// Represents the color of a particular square on the board.
     /// </summary>
 	public enum Color {
-		Color1 = 1, Color2 = 2, Color3 = 3, Color4 = 4, Grey = 0
+        /// <summary>
+        /// The color of the player who goes first.
+        /// </summary>
+		Color1 = 1, 
+        /// <summary>
+        /// The color of the player who goes second.
+        /// </summary>
+        Color2 = 2, 
+        /// <summary>
+        /// The color of the player who goes third.
+        /// </summary>
+        Color3 = 3, 
+        /// <summary>
+        /// The color of the player who goes fourth.
+        /// </summary>
+        Color4 = 4, 
+        /// <summary>
+        /// The color of the players who died.
+        /// </summary>
+        Grey = 0
 	}
 
     /// <summary>
