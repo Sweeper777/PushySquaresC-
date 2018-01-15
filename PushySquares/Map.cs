@@ -21,7 +21,12 @@ namespace PushySquares {
 		public Dictionary<Color, Position> Spawnpoints { get; set; }
 
         /// <summary>
+        /// Gets or sets the slippery positions on the map.
+        /// </summary>
+        /// <value>The slippery positions.</value>
         public List<Position> SlipperyPositions { get; set; }
+
+        /// <summary>
         /// The standard map used in a standard game of PushySquares.
         /// </summary>
 		public static readonly Map Standard = new Map(
