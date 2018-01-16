@@ -112,6 +112,12 @@ namespace PushySquares {
 				throw new ArgumentException ("Invalid Color!");
 			}
 		}
+
+        /// <summary>
+        /// Whether or not the tile is a square tile
+        /// </summary>
+        /// <returns><c>true</c>, if the tile is a square tile, <c>false</c> otherwise.</returns>
+        /// <param name="tile">The tile to check.</param>
         public static bool IsSquare(this Tile tile) {
             return tile.ToString().StartsWith("Square", StringComparison.InvariantCulture);
         }
