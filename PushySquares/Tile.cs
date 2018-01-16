@@ -112,5 +112,8 @@ namespace PushySquares {
 				throw new ArgumentException ("Invalid Color!");
 			}
 		}
+        public static bool IsSquare(this Tile tile) {
+            return tile.ToString().StartsWith("Square", StringComparison.InvariantCulture);
+        }
 	}
 }
