@@ -43,10 +43,11 @@ O+++OO+++O
 
         /// <summary>
         /// Initializes a new instance of the <see cref="T:PushySquares.Map"/> struct with the specifed
-        /// board configuration and spawnpoints.
+        /// board configuration, spawnpoints and slippery positions.
         /// </summary>
         /// <param name="board">The initial board configuration.</param>
         /// <param name="spawnpoints">The spawnpoints.</param>
+        /// <param name="slipperPositions">The slippery positions</param>
 		public Map(Tile[,] board, Dictionary<Color, Position> spawnpoints, List<Position> slipperPositions) {
 			Board = board;
 			Spawnpoints = spawnpoints;
