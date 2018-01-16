@@ -47,9 +47,10 @@ O+++OO+++O
         /// </summary>
         /// <param name="board">The initial board configuration.</param>
         /// <param name="spawnpoints">The spawnpoints.</param>
-		public Map(Tile[,] board, Dictionary<Color, Position> spawnpoints) {
+		public Map(Tile[,] board, Dictionary<Color, Position> spawnpoints, List<Position> slipperPositions) {
 			Board = board;
 			Spawnpoints = spawnpoints;
+            SlipperyPositions = slipperPositions;
 		}
 
         /// <summary>
