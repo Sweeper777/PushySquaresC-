@@ -122,4 +122,18 @@ namespace PushySquares {
             return tile.ToString().StartsWith("Square", StringComparison.InvariantCulture);
         }
 	}
+        public static Func<Position, Position> GetDisplacementFunction(this Direction direction) {
+            switch (direction) {
+                case Direction.Up:
+                    return (pos) => pos.Above;
+                case Direction.Down:
+                    return (pos) => pos.Below;
+                case Direction.Left:
+                    return (pos) => pos.Left;
+                case Direction.Right:
+                    return (pos) => pos.Right;
+                default:
+                    return null;
+            }
+        }
 }
