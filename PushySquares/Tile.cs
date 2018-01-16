@@ -123,6 +123,13 @@ namespace PushySquares {
         }
 	}
     public static class DirectionExtensions {
+        /// <summary>
+        /// Gets the displacement function for a particular direction. e.g. If <c>direction</c> is 
+        /// <see cref="Direction.Up"/>, this method returns a function that returns the position above
+        /// a particular position.
+        /// </summary>
+        /// <returns>The displacement function for a particular position.</returns>
+        /// <param name="direction">The direction.</param>
         public static Func<Position, Position> GetDisplacementFunction(this Direction direction) {
             switch (direction) {
                 case Direction.Up:
