@@ -92,6 +92,10 @@ O+++OO+++O
         ///         <item><code>4</code></item>
         ///         <item>Spawnpoint for <see cref="E:PushySquares.Color.Color4"/></item>
         ///     </item>
+        ///     <item>
+        ///         <item><code>s</code></item>
+        ///         <item>A slippery position</item>
+        ///     </item>
         /// </list>
         /// </remarks>
 		public Map(string mapString) {
