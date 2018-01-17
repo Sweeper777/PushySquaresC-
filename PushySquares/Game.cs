@@ -32,6 +32,7 @@ namespace PushySquares
         public Dictionary<Color, Position> Spawnpoints { get; set; }
 
         /// <summary>
+        public List<Position> SlipperyPositions { get; set; }
         /// Gets or sets the players in this game.
         /// </summary>
         /// <value>The players.</value>
