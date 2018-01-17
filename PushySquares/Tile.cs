@@ -122,6 +122,10 @@ namespace PushySquares {
             return tile.ToString().StartsWith("Square", StringComparison.InvariantCulture);
         }
 	}
+
+    /// <summary>
+    /// A class containing extension methods for <see cref="T:PushySquares.Direction"/>.
+    /// </summary>
     public static class DirectionExtensions {
         /// <summary>
         /// Gets the displacement function for a particular direction. e.g. If <c>direction</c> is 
