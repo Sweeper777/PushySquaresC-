@@ -158,32 +158,39 @@ namespace PushySquares
             {
                 for (int x = 0; x < Board.GetLength(0); x++)
                 {
-                    switch (Board[x, y])
+                    if (SlipperyPositions.Contains(new Position(x, y)))
                     {
-                        case Tile.Empty:
-                            builder.Append("\u2B1C\uFE0F");
-                            break;
-                        case Tile.Void:
-                            builder.Append("  ");
-                            break;
-                        case Tile.Wall:
-                            builder.Append("\U0001F532");
-                            break;
-                        case Tile.SquareGrey:
-                            builder.Append("\u2139\uFE0F️ ");
-                            break;
-                        case Tile.SquareColor1:
-                            builder.Append("\U0001F6B9");
-                            break;
-                        case Tile.SquareColor2:
-                            builder.Append("\U0001F6BA️");
-                            break;
-                        case Tile.SquareColor3:
-                            builder.Append("\U0001F6BC️");
-                            break;
-                        case Tile.SquareColor4:
-                            builder.Append("\u2747\uFE0F️ ");
-                            break;
+                        builder.Append("\U0001F4A6");
+                    }
+                    else
+                    {
+                        switch (Board[x, y])
+                        {
+                            case Tile.Empty:
+                                builder.Append("\u2B1C\uFE0F");
+                                break;
+                            case Tile.Void:
+                                builder.Append("  ");
+                                break;
+                            case Tile.Wall:
+                                builder.Append("\U0001F532");
+                                break;
+                            case Tile.SquareGrey:
+                                builder.Append("\u2139\uFE0F️ ");
+                                break;
+                            case Tile.SquareColor1:
+                                builder.Append("\U0001F6B9");
+                                break;
+                            case Tile.SquareColor2:
+                                builder.Append("\U0001F6BA️");
+                                break;
+                            case Tile.SquareColor3:
+                                builder.Append("\U0001F6BC️");
+                                break;
+                            case Tile.SquareColor4:
+                                builder.Append("\u2747\uFE0F️ ");
+                                break;
+                        }
                     }
                 }
                 builder.AppendLine();
