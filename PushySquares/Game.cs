@@ -68,6 +68,7 @@ namespace PushySquares
         {
             Board = map.Board;
             Spawnpoints = map.Spawnpoints;
+            SlipperyPositions = map.SlipperyPositions;
             Players = new List<Player>();
             switch (playerCount)
             {
