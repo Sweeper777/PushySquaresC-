@@ -144,5 +144,20 @@ namespace PushySquares {
                     return null;
             }
         }
+        public static Func<Position, Position> GetReverseDisplacementFunction(this Direction direction) {
+            switch (direction)
+            {
+                case Direction.Up:
+                    return (pos) => pos.Below;
+                case Direction.Down:
+                    return (pos) => pos.Above;
+                case Direction.Left:
+                    return (pos) => pos.Right;
+                case Direction.Right:
+                    return (pos) => pos.Left;
+                default:
+                    return null;
+            }
+        }
     }
 }
