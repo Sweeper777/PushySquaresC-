@@ -314,6 +314,9 @@ namespace PushySquares
                     Board.ItemAt(displacement(position)) = tile;
                 }
             }
+            var slippedPositions = new List<Position>();
+            foreach (var slipperyPosition in SlipperyPositions) {
+            }
             var newSquareColor1 = NextTurn();
             Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
