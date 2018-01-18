@@ -32,7 +32,7 @@ namespace PushySquares {
 		public static readonly Map Standard = new Map(
 @"....OO....
 .1++++++2.
-.++++++++.
+.s+++++++.
 .++++++++.
 O+++OO+++O
 O+++OO+++O
