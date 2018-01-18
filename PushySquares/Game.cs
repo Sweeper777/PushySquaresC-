@@ -268,7 +268,7 @@ namespace PushySquares
             if (allSquarePositions.Count == 0)
             {
                 Color? newSquareColor = NextTurn();
-                Delegate?.Invoke(direction, new List<Position>(), new List<Position>(), new List<Position>(), newSquareColor);
+                Delegate?.Invoke(direction, new List<Position>(), new List<Position>(), new List<Position>(), new List<Position>(), newSquareColor);
                 return;
             }
 
@@ -315,7 +315,7 @@ namespace PushySquares
                 }
             }
             var newSquareColor1 = NextTurn();
-            Delegate?.Invoke(direction, movingSquaresPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
+            Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
     }
 
