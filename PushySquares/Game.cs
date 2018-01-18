@@ -324,6 +324,7 @@ namespace PushySquares
     /// </summary>
     public delegate void GameDelegate(Direction? direction,
                                       List<Position> originalPositions,
+                                      List<Position> slippedPositions,
                                       List<Position> destroyedSquaresPositions,
                                       List<Position> greyedOutPositions,
                                       Color? newSquareColor);
