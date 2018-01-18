@@ -316,6 +316,21 @@ namespace PushySquares
             }
             var slippedPositions = new List<Position>();
             foreach (var slipperyPosition in SlipperyPositions) {
+                if (Board.ItemAt(slipperyPosition).IsSquare()) {
+                    var displaced = displacement(slipperyPosition);
+                    if (Board.ItemAt(displaced) == Tile.Empty || Board.ItemAt(displaced) == Tile.Void) {
+                        slippedPositions.Add(reverseDisplacement(slipperyPosition));
+                        movingSquaresPositions.Remove(reverseDisplacement(slipperyPosition));
+                        if (Board.ItemAt(displaced) == Tile.Void) {
+                            beingDestroyedSquaresPositions.Add(reverseDisplacement(slipperyPosition));
+                            Board.ItemAt(slipperyPosition) = Tile.Empty;
+                        } else {
+                            var slippedTile = Board.ItemAt(slipperyPosition);
+                            Board.ItemAt(slipperyPosition) = Tile.Empty;
+                            Board.ItemAt(displaced) = slippedTile;
+                        }
+                    }
+                }
             }
             var newSquareColor1 = NextTurn();
             Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
