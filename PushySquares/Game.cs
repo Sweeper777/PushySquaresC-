@@ -107,7 +107,7 @@ namespace PushySquares
         /// </summary>
         public void MoveDown()
         {
-            Move(x => x.Below, (x, y) => y.Y.CompareTo(x.Y), Direction.Down);
+            Move((x, y) => y.Y.CompareTo(x.Y), Direction.Down);
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace PushySquares
         /// </summary>
         public void MoveUp()
         {
-            Move(x => x.Above, (x, y) => x.Y.CompareTo(y.Y), Direction.Up);
+            Move((x, y) => x.Y.CompareTo(y.Y), Direction.Up);
         }
 
         /// <summary>
@@ -123,7 +123,7 @@ namespace PushySquares
         /// </summary>
         public void MoveRight()
         {
-            Move(x => x.Right, (x, y) => y.X.CompareTo(x.X), Direction.Right);
+            Move((x, y) => y.X.CompareTo(x.X), Direction.Right);
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace PushySquares
         /// </summary>
         public void MoveLeft()
         {
-            Move(x => x.Left, (x, y) => x.X.CompareTo(y.X), Direction.Left);
+            Move((x, y) => x.X.CompareTo(y.X), Direction.Left);
         }
 
         /// <summary>
