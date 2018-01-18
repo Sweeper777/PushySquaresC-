@@ -260,8 +260,10 @@ namespace PushySquares
             return retVal;
         }
 
-        private void Move(Func<Position, Position> displacement, Comparison<Position> sorter, Direction direction)
+        private void Move(Comparison<Position> sorter, Direction direction)
         {
+            var displacement = direction.GetDisplacementFunction();
+            var reverseDisplacement = direction.GetReverseDisplacementFunction();
             var allSquarePositions = Board.PositionsOf(CurrentPlayer.Color);
             if (allSquarePositions.Count == 0)
             {
