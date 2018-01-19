@@ -116,6 +116,31 @@
             <returns>A square <see cref="T:PushySquares.Tile"/> that has the same color as the parameter.</returns>
             <param name="color">The color of the returned <see cref="T:PushySquares.Tile"/>.</param>
         </member>
+        <member name="M:PushySquares.TileExtensions.IsSquare(PushySquares.Tile)">
+            <summary>
+            Whether or not the tile is a square tile
+            </summary>
+            <returns><c>true</c>, if the tile is a square tile, <c>false</c> otherwise.</returns>
+            <param name="tile">The tile to check.</param>
+        </member>
+        <member name="M:PushySquares.DirectionExtensions.GetDisplacementFunction(PushySquares.Direction)">
+            <summary>
+            Gets the displacement function for a particular direction. e.g. If <c>direction</c> is 
+            <see cref="F:PushySquares.Direction.Up"/>, this method returns a function that returns the position above
+            a particular position.
+            </summary>
+            <returns>The displacement function for a particular position.</returns>
+            <param name="direction">The direction.</param>
+        </member>
+        <member name="M:PushySquares.DirectionExtensions.GetReverseDisplacementFunction(PushySquares.Direction)">
+            <summary>
+            Gets the reverse displacement function for a particular direction. e.g. If <c>direction</c> is 
+            <see cref="F:PushySquares.Direction.Up"/>, this method returns a function that returns the position below
+            a particular position.
+            </summary>
+            <returns>The reverse displacement function for a particular position.</returns>
+            <param name="direction">The direction.</param>
+        </member>
         <member name="T:PushySquares.Position">
             <summary>
             Represents a point on the game board.
@@ -272,18 +297,25 @@
             </summary>
             <value>The spawnpoints.</value>
         </member>
+        <member name="P:PushySquares.Map.SlipperyPositions">
+            <summary>
+            Gets or sets the slippery positions on the map.
+            </summary>
+            <value>The slippery positions.</value>
+        </member>
         <member name="F:PushySquares.Map.Standard">
             <summary>
             The standard map used in a standard game of PushySquares.
             </summary>
         </member>
-        <member name="M:PushySquares.Map.#ctor(PushySquares.Tile[0:,0:],System.Collections.Generic.Dictionary{PushySquares.Color,PushySquares.Position})">
+        <member name="M:PushySquares.Map.#ctor(PushySquares.Tile[0:,0:],System.Collections.Generic.Dictionary{PushySquares.Color,PushySquares.Position},System.Collections.Generic.List{PushySquares.Position})">
             <summary>
             Initializes a new instance of the <see cref="T:PushySquares.Map"/> struct with the specifed
-            board configuration and spawnpoints.
+            board configuration, spawnpoints and slippery positions.
             </summary>
             <param name="board">The initial board configuration.</param>
             <param name="spawnpoints">The spawnpoints.</param>
+            <param name="slipperPositions">The slippery positions</param>
         </member>
         <member name="M:PushySquares.Map.#ctor(System.String)">
             <summary>
@@ -323,6 +355,10 @@
                  <item>
                     <item><code>4</code></item>
                     <item>Spawnpoint for <see cref="E:PushySquares.Color.Color4"/></item>
+                </item>
+                <item>
+                    <item><code>s</code></item>
+                    <item>A slippery position</item>
                 </item>
             </list>
             </remarks>

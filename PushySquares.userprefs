@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{444EF0DC-35C8-4576-B7A7-3B9CC403861F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PushySquares/GameAI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PushySquares/Program.cs">
     <Files>
-      <File FileName="PushySquares/GameAI.cs" Line="165" Column="96" />
-      <File FileName="PushySquares/Position.cs" Line="80" Column="19" />
-      <File FileName="PushySquares/Game.cs" Line="115" Column="79" />
+      <File FileName="PushySquares/Game.cs" Line="35" Column="60" />
+      <File FileName="PushySquares/Map.cs" Line="35" Column="3" />
+      <File FileName="PushySquares/Program.cs" Line="14" Column="21" />
+      <File FileName="PushySquares/Tile.cs" Line="127" Column="86" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.PushySquares PreferredExecutionTarget="MonoDevelop.Default" />
