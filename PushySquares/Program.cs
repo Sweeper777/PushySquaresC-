@@ -9,7 +9,7 @@ namespace PushySquares {
             //Console.WriteLine(game);
             //game.MoveDown();
             //Console.WriteLine(game);
-            AIMatch();
+            PlayGame();
         }
 
         public static void PlayGame()
