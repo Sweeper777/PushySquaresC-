@@ -158,7 +158,7 @@ namespace PushySquares
             {
                 for (int x = 0; x < Board.GetLength(0); x++)
                 {
-                    if (SlipperyPositions.Contains(new Position(x, y)))
+                    if (SlipperyPositions.Contains(new Position(x, y)) && !Board[x, y].IsSquare())
                     {
                         builder.Append("\U0001F4A6");
                     }
