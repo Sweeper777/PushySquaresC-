@@ -306,6 +306,14 @@ namespace PushySquares
                 if (IsAtBorder(position).Contains(direction)) {
                     continue;
                 }
+                var tileAfter = Board.ItemAt(displacement(displacement(position)));
+                if (SlipperyPositions.Contains(displacement(position)) && 
+                    (tileAfter == Tile.Empty || tileAfter == Tile.Void)) {
+                    slippedPositions.Add(position);
+                    if (tileAfter == Tile.Void) {
+                        beingDestroyedSquaresPositions.Add(position);
+                    }
+                }
             }
             var sortedPositions = movingSquaresPositions.Distinct().ToList();
             sortedPositions.Sort(sorter);
