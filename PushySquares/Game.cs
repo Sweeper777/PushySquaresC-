@@ -42,7 +42,7 @@ namespace PushySquares
         /// </summary>
         /// <value>The players.</value>
         public List<Player> Players { get; set; }
-        private int currentPlayerIndex = 0;
+        int currentPlayerIndex = 0;
 
         /// <summary>
         /// Gets the current player. The current player is the player that will make a move in the
@@ -212,7 +212,7 @@ namespace PushySquares
             return copy;
         }
 
-        private void SpawnNewSquare(Color c)
+        void SpawnNewSquare(Color c)
         {
             Board.ItemAt(Spawnpoints[c]) = TileExtensions.FromColor(c);
         }
