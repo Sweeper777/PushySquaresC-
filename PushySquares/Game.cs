@@ -303,6 +303,9 @@ namespace PushySquares
             }
             var slippedPositions = new List<Position>();
             foreach (var position in movingSquaresPositions) {
+                if (IsAtBorder(position).Contains(direction)) {
+                    continue;
+                }
             }
             var sortedPositions = movingSquaresPositions.Distinct().ToList();
             sortedPositions.Sort(sorter);
