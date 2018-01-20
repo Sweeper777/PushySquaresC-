@@ -301,6 +301,9 @@ namespace PushySquares
             outOfLoop:
                 movingSquaresPositions.AddRange(pushedPositions);
             }
+            var slippedPositions = new List<Position>();
+            foreach (var position in movingSquaresPositions) {
+            }
             var sortedPositions = movingSquaresPositions.Distinct().ToList();
             sortedPositions.Sort(sorter);
             beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
