@@ -315,6 +315,7 @@ namespace PushySquares
                     }
                 }
             }
+            movingSquaresPositions.RemoveAll(slippedPositions.Contains);
             var sortedPositions = movingSquaresPositions.Distinct().ToList();
             sortedPositions.Sort(sorter);
             beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
