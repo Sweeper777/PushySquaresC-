@@ -324,6 +324,11 @@ namespace PushySquares
             foreach (var position in slippedPositions.Concat(sortedPositions)){
                 var tile = Board.ItemAt(position);
                 Board.ItemAt(position) = Tile.Empty;
+                if (!beingDestroyedSquaresPositions.Contains(position)){
+                    if (slippedPositions.Contains(position)) {
+                        Board.ItemAt(displacement(displacement(position))) = tile;
+                    } else {
+                        Board.ItemAt(displacement(position)) = tile;
                     }
                 }
             }
