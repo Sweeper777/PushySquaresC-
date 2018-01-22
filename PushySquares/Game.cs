@@ -324,26 +324,6 @@ namespace PushySquares
             foreach (var position in slippedPositions.Concat(sortedPositions)){
                 var tile = Board.ItemAt(position);
                 Board.ItemAt(position) = Tile.Empty;
-                if (!beingDestroyedSquaresPositions.Contains(position))
-                {
-                    Board.ItemAt(displacement(position)) = tile;
-                }
-            }
-            var slippedPositions = new List<Position>();
-            foreach (var slipperyPosition in SlipperyPositions) {
-                if (Board.ItemAt(slipperyPosition).IsSquare()) {
-                    var displaced = displacement(slipperyPosition);
-                    if (Board.ItemAt(displaced) == Tile.Empty || Board.ItemAt(displaced) == Tile.Void) {
-                        slippedPositions.Add(reverseDisplacement(slipperyPosition));
-                        movingSquaresPositions.Remove(reverseDisplacement(slipperyPosition));
-                        if (Board.ItemAt(displaced) == Tile.Void) {
-                            beingDestroyedSquaresPositions.Add(reverseDisplacement(slipperyPosition));
-                            Board.ItemAt(slipperyPosition) = Tile.Empty;
-                        } else {
-                            var slippedTile = Board.ItemAt(slipperyPosition);
-                            Board.ItemAt(slipperyPosition) = Tile.Empty;
-                            Board.ItemAt(displaced) = slippedTile;
-                        }
                     }
                 }
             }
