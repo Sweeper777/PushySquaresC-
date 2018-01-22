@@ -123,6 +123,11 @@
             <returns><c>true</c>, if the tile is a square tile, <c>false</c> otherwise.</returns>
             <param name="tile">The tile to check.</param>
         </member>
+        <member name="T:PushySquares.DirectionExtensions">
+            <summary>
+            A class containing extension methods for <see cref="T:PushySquares.Direction"/>.
+            </summary>
+        </member>
         <member name="M:PushySquares.DirectionExtensions.GetDisplacementFunction(PushySquares.Direction)">
             <summary>
             Gets the displacement function for a particular direction. e.g. If <c>direction</c> is 
@@ -385,6 +390,12 @@
             </summary>
             <value>The spawnpoints.</value>
         </member>
+        <member name="P:PushySquares.Game.SlipperyPositions">
+            <summary>
+            Gets or sets the slippery positions on the map.
+            </summary>
+            <value>The slippery positions.</value>
+        </member>
         <member name="P:PushySquares.Game.Players">
             <summary>
             Gets or sets the players in this game.
@@ -446,6 +457,13 @@
             Creates a deep copy of the current game, except for the <see cref="P:PushySquares.Game.Delegate"/> property.
             </summary>
             <returns>A deep copy of this game.</returns>
+        </member>
+        <member name="M:PushySquares.Game.IsAtBorder(PushySquares.Position)">
+            <summary>
+            Returns in which direction(s) is a position at a border.
+            </summary>
+            <returns>A list containing all the directions in which the position is at a border.</returns>
+            <param name="pos">The position.</param>
         </member>
         <member name="T:PushySquares.GameDelegate">
             <summary>
