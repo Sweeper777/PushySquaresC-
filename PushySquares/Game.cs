@@ -336,6 +336,12 @@ namespace PushySquares
             var newSquareColor1 = NextTurn();
             Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
+
+        /// <summary>
+        /// Returns in which direction(s) is a position at a border.
+        /// </summary>
+        /// <returns>A list containing all the directions in which the position is at a border.</returns>
+        /// <param name="pos">The position.</param>
         public List<Direction> IsAtBorder(Position pos) {
             var retVal = new List<Direction>();
             var displacedTile = Board.ItemAt(pos.Above);
