@@ -320,8 +320,8 @@ namespace PushySquares
             sortedPositions.Sort(sorter);
             beingDestroyedSquaresPositions = beingDestroyedSquaresPositions.Distinct().ToList();
             var greyedOutSquaresPositions = HandleDeaths(beingDestroyedSquaresPositions);
-            foreach (var position in sortedPositions)
-            {
+
+            foreach (var position in slippedPositions.Concat(sortedPositions)){
                 var tile = Board.ItemAt(position);
                 Board.ItemAt(position) = Tile.Empty;
                 if (!beingDestroyedSquaresPositions.Contains(position))
@@ -347,6 +347,7 @@ namespace PushySquares
                     }
                 }
             }
+           
             var newSquareColor1 = NextTurn();
             Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
