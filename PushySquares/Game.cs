@@ -336,6 +336,28 @@ namespace PushySquares
             var newSquareColor1 = NextTurn();
             Delegate?.Invoke(direction, movingSquaresPositions, slippedPositions, beingDestroyedSquaresPositions, greyedOutSquaresPositions, newSquareColor1);
         }
+        public List<Direction> IsAtBorder(Position pos) {
+            var retVal = new List<Direction>();
+            var displacedTile = Board.ItemAt(pos.Above);
+            if (displacedTile == Tile.Void || displacedTile == Tile.Wall) {
+                retVal.Add(Direction.Up);
+            }
+            displacedTile = Board.ItemAt(pos.Below);
+            if (displacedTile == Tile.Void || displacedTile == Tile.Wall) {
+                retVal.Add(Direction.Down);
+            }
+            displacedTile = Board.ItemAt(pos.Left);
+            if (displacedTile == Tile.Void || displacedTile == Tile.Wall)
+            {
+                retVal.Add(Direction.Left);
+            }
+            displacedTile = Board.ItemAt(pos.Right);
+            if (displacedTile == Tile.Void || displacedTile == Tile.Wall)
+            {
+                retVal.Add(Direction.Right);
+            }
+            return retVal;
+        }
     }
 
     /// <summary>
